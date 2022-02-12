@@ -132,4 +132,11 @@ public class Level1ControllerTest {
     public void 자연수_뒤집어_배열로_만들기() {
         assertThat(Integer_reverse.solution(12345)).isEqualTo(new int[] {5,4,3,2,1});
     }
+
+    // Practice 2022.02.12
+    @Test
+    public void 소수_만들기() {
+        assertThat(Create_Decimal.solution(new int[] {1, 2, 3, 4})).isEqualTo(1);
+        assertThat(Create_Decimal.solution(new int[] {1, 2, 7, 6 , 4})).isEqualTo(4);
+    }
 }
