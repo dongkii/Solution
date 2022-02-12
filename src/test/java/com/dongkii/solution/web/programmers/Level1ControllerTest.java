@@ -146,4 +146,13 @@ public class Level1ControllerTest {
         assertThat(Divisor.solution(12)).isEqualTo(28);
         assertThat(Divisor.solution(5)).isEqualTo(6);
     }
+
+    // Practice 2022.02.12
+    @Test
+    public void 삼진법_뒤집기() {
+        assertThat(Ternary.solution(45)).isEqualTo(7);
+        assertThat(Ternary.solution(125)).isEqualTo(229);
+        assertThat(Ternary.solution(1)).isEqualTo(1);
+        assertThat(Ternary.solution(3)).isEqualTo(1);
+    }
 }
