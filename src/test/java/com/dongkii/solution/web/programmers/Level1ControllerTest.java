@@ -155,4 +155,12 @@ public class Level1ControllerTest {
         assertThat(Ternary.solution(1)).isEqualTo(1);
         assertThat(Ternary.solution(3)).isEqualTo(1);
     }
+
+    // Practice 2022.02.13
+    @Test
+    public void 실패율() {
+        assertThat(Failure_rate.solution(5, new int[] {2, 1, 2, 6, 2, 4, 3, 3})).isEqualTo(new int[] {3, 4, 2, 1, 5});
+        assertThat(Failure_rate.solution(4, new int[] {4, 4, 4, 4, 4})).isEqualTo(new int[] {4, 1, 2, 3});
+        assertThat(Failure_rate.solution(4, new int[] {1, 2, 3, 2, 1})).isEqualTo(new int[] {3, 2, 1, 4});
+    }
 }
