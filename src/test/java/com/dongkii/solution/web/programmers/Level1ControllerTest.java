@@ -139,4 +139,11 @@ public class Level1ControllerTest {
         assertThat(Create_Decimal.solution(new int[] {1, 2, 3, 4})).isEqualTo(1);
         assertThat(Create_Decimal.solution(new int[] {1, 2, 7, 6 , 4})).isEqualTo(4);
     }
+
+    // Practice 2022.02.12
+    @Test
+    public void 약수의_합() {
+        assertThat(Divisor.solution(12)).isEqualTo(28);
+        assertThat(Divisor.solution(5)).isEqualTo(6);
+    }
 }
