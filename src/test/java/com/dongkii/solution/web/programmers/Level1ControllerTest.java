@@ -163,4 +163,17 @@ public class Level1ControllerTest {
         assertThat(Failure_rate.solution(4, new int[] {4, 4, 4, 4, 4})).isEqualTo(new int[] {4, 1, 2, 3});
         assertThat(Failure_rate.solution(4, new int[] {1, 2, 3, 2, 1})).isEqualTo(new int[] {3, 2, 1, 4});
     }
+
+    // Practice 2022.02.14
+    @Test
+    public void 모의고사() {
+        assertThat(Mock_exam.solution(new int[] {1, 2, 3, 4, 5})).isEqualTo(new int[] {1});
+        assertThat(Mock_exam.solution(new int[] {1, 3, 2, 4, 2})).isEqualTo(new int[] {1, 2, 3});
+    }
+
+    // Practice 2022.02.14
+    @Test
+    public void 이상한_문자_만들기() {
+        assertThat(Create_String.solution("try hello world")).isEqualTo("TrY HeLlO WoRlD");
+    }
 }

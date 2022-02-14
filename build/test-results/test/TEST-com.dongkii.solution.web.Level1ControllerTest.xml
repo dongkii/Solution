@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.dongkii.solution.web.Level1ControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-12T12:25:19" hostname="DONGKII_PC" time="0.068">
-  <properties/>
-  <testcase name="정수_제곱근_판별()" classname="com.dongkii.solution.web.Level1ControllerTest" time="0.068"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
