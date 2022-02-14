@@ -3,7 +3,7 @@ package com.dongkii.solution.web.programmers.level1;
 import java.util.Locale;
 
 public class Create_String {
-    public String solution(String s) {
+    public static String solution(String s) {
         String answer = "";
 
         String[] words = s.split(" ", -1);

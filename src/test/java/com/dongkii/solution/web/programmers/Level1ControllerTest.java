@@ -176,4 +176,11 @@ public class Level1ControllerTest {
     public void 이상한_문자_만들기() {
         assertThat(Create_String.solution("try hello world")).isEqualTo("TrY HeLlO WoRlD");
     }
+
+    // Practice 2022.02.14
+    @Test
+    public void 최대공약수와_최소공배수() {
+        assertThat(GCD_LCM.solution(3, 12)).isEqualTo(new int[] {3, 12});
+        assertThat(GCD_LCM.solution(2, 5)).isEqualTo(new int[] {1, 10});
+    }
 }
