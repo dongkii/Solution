@@ -34,7 +34,6 @@ public class Level2ControllerTest {
     }
 
     // 4st week Q2
-    // Level 2
     @Test
     public void 멀쩡한사각형() {
         assertThat(Normal_square.solution(8, 12)).isEqualTo(80);
@@ -42,5 +41,20 @@ public class Level2ControllerTest {
         assertThat(Normal_square.solution(3, 5)).isEqualTo(8);
         assertThat(Normal_square.solution(7, 3)).isEqualTo(12);
         assertThat(Normal_square.solution(5, 19)).isEqualTo(72);
+    }
+
+    // 5st week Q1
+    @Test
+    public void 나라의숫자_124() {
+        assertThat(Contry_num_124.solution(1)).isEqualTo("1");
+        assertThat(Contry_num_124.solution(2)).isEqualTo("2");
+        assertThat(Contry_num_124.solution(3)).isEqualTo("4");
+        assertThat(Contry_num_124.solution(4)).isEqualTo("11");
+        assertThat(Contry_num_124.solution(5)).isEqualTo("12");
+        assertThat(Contry_num_124.solution(6)).isEqualTo("14");
+        assertThat(Contry_num_124.solution(7)).isEqualTo("21");
+        assertThat(Contry_num_124.solution(8)).isEqualTo("22");
+        assertThat(Contry_num_124.solution(9)).isEqualTo("24");
+        assertThat(Contry_num_124.solution(10)).isEqualTo("41");
     }
 }
