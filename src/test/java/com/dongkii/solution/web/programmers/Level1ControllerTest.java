@@ -183,4 +183,10 @@ public class Level1ControllerTest {
         assertThat(GCD_LCM.solution(3, 12)).isEqualTo(new int[] {3, 12});
         assertThat(GCD_LCM.solution(2, 5)).isEqualTo(new int[] {1, 10});
     }
+
+    // Practice 2022.02.16
+    @Test
+    public void 크레인_인형뽑기_게임() {
+        assertThat(Crane_doll.solution(new int[][] {{0,0,0,0,0},{0,0,1,0,3},{0,2,5,0,1},{4,2,4,4,2},{3,5,1,3,1}}, new int[] {1,5,3,5,1,2,1,4})).isEqualTo(4);
+    }
 }
