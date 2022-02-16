@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.dongkii.solution.web.programmers.Level1ControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-02-14T04:09:12" hostname="Q218008" time="0.064">
-  <properties/>
-  <testcase name="이상한_문자_만들기()" classname="com.dongkii.solution.web.programmers.Level1ControllerTest" time="0.064"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

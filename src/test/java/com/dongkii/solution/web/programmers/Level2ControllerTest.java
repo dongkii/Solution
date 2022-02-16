@@ -57,4 +57,10 @@ public class Level2ControllerTest {
         assertThat(Contry_num_124.solution(9)).isEqualTo("24");
         assertThat(Contry_num_124.solution(10)).isEqualTo("41");
     }
+
+    // 5st week Q2
+    @Test
+    public void 거리두기_확인하기() {
+        assertThat(Keep_distance.solution(new String[][] {{"POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP"}, {"POOPX", "OXPXP", "PXXXO", "OXXXO", "OOOPP"}, {"PXOPX", "OXOXP", "OXPOX", "OXXOP", "PXPOX"}, {"OOOXX", "XOOOX", "OOOXX", "OXOOX", "OOOOO"}, {"PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP"}})).isEqualTo(new int[] {1, 0, 1, 1, 1});
+    }
 }
