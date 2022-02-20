@@ -69,4 +69,10 @@ public class Level2ControllerTest {
     public void 컬러링북() {
         assertThat(Coloring.solution(6, 4, new int[][] {{1,1,1,0}, {1,2,2,0},{1,0,0,1},{0,0,0,1},{0,0,0,3},{0,0,0,3}})).isEqualTo(new int[] {4,5});
     }
+
+    // Practice 2022-02-20
+    @Test
+    public void 행렬의곱셈() {
+        assertThat(Matrix.solution(new int[][] {{1 ,4}, {3, 2}, {4, 1}}, new int[][] {{3, 3}, {3, 3}})).isEqualTo(new int[][] {{15, 15}, {15, 15}, {15, 15}});
+    }
 }

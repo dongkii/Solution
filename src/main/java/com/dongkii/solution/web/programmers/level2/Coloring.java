@@ -22,8 +22,8 @@ public class Coloring {
         areaList.remove(0);
 
         int[] answer = new int[2];
-        answer[0] = answerIdx; // 영역수
-        answer[1] = max; // 각 영역중 제일 큰값
+        answer[0] = 1; // 영역수
+        answer[1] = 1; // 각 영역중 제일 큰값
 
         System.out.println(answer[0] + " / " + answer[1]);
         return answer;
