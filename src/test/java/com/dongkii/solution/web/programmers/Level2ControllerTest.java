@@ -75,4 +75,12 @@ public class Level2ControllerTest {
     public void 행렬의곱셈() {
         assertThat(Matrix.solution(new int[][] {{1 ,4}, {3, 2}, {4, 1}}, new int[][] {{3, 3}, {3, 3}})).isEqualTo(new int[][] {{15, 15}, {15, 15}, {15, 15}});
     }
+    // Practice 2022-02-20
+    @Test
+    public void 피보나치_수() {
+        assertThat(Fibonachi.solution(3)).isEqualTo(2);
+        assertThat(Fibonachi.solution(5)).isEqualTo(5);
+        assertThat(Fibonachi.solution(6)).isEqualTo(8);
+        assertThat(Fibonachi.solution(7)).isEqualTo(13);
+    }
 }
