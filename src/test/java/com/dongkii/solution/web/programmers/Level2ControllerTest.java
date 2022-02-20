@@ -75,6 +75,7 @@ public class Level2ControllerTest {
     public void 행렬의곱셈() {
         assertThat(Matrix.solution(new int[][] {{1 ,4}, {3, 2}, {4, 1}}, new int[][] {{3, 3}, {3, 3}})).isEqualTo(new int[][] {{15, 15}, {15, 15}, {15, 15}});
     }
+
     // Practice 2022-02-20
     @Test
     public void 피보나치_수() {
@@ -82,5 +83,13 @@ public class Level2ControllerTest {
         assertThat(Fibonachi.solution(5)).isEqualTo(5);
         assertThat(Fibonachi.solution(6)).isEqualTo(8);
         assertThat(Fibonachi.solution(7)).isEqualTo(13);
+    }
+
+    // Practice 2022-02-20
+    @Test
+    public void n진수게임() {
+        assertThat(Ngame.solution(2, 4, 2, 1)).isEqualTo("0111");
+        assertThat(Ngame.solution(16, 16, 2, 1)).isEqualTo("02468ACE11111111");
+        assertThat(Ngame.solution(16, 16, 2, 2)).isEqualTo("13579BDF01234567");
     }
 }
