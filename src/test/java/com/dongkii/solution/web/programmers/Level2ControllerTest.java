@@ -92,4 +92,10 @@ public class Level2ControllerTest {
         assertThat(Ngame.solution(16, 16, 2, 1)).isEqualTo("02468ACE11111111");
         assertThat(Ngame.solution(16, 16, 2, 2)).isEqualTo("13579BDF01234567");
     }
+
+    // Practice 2022-02-21
+    @Test
+    public void 숫자의표현() {
+        assertThat(ExpressionOfNumber.solution(15)).isEqualTo(4);
+    }
 }
