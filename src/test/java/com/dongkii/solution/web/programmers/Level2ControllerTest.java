@@ -133,4 +133,12 @@ public class Level2ControllerTest {
         assertThat(Correct_parenthesis.solution(")()(")).isEqualTo(false);
         assertThat(Correct_parenthesis.solution("(()(")).isEqualTo(false);
     }
+
+    // Practice 2022-02-21
+    @Test
+    public void 땅따먹기() {
+        assertThat(Eat_the_ground.solution(new int[][] {{1, 2, 3, 5}, {5, 6, 7, 8}, {4, 3, 2, 1}})).isEqualTo(16);
+    }
+
+
 }
