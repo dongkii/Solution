@@ -13,6 +13,7 @@ public class Eat_the_ground {
                 for(int k = 0; k < 4; k++) {
                     if(j != k) {
                         tmp[i][j] = Math.max(tmp[i][j], land[i][j] + tmp[i-1][k]);
+                        // tmp 2차원 배열에 기존값과 이전값을 더한것 중 가장 큰값을 처리
                     }
                 }
             }

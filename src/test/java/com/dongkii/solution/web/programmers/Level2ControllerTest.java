@@ -145,5 +145,10 @@ public class Level2ControllerTest {
         assertThat(Eat_the_ground.solution(new int[][] {{1, 1, 1, 1}, {2, 2, 2, 3}, {3, 3, 3, 6}, {4, 4, 4, 7}})).isEqualTo(14);
     }
 
-
+    // Practice 2022-02-21
+    @Test
+    public void 가장_큰_정사각형_찾기() {
+        assertThat(Find_the_largest_square.solution(new int[][] {{0,1,1,1},{1,1,1,1},{1,1,1,1},{0,0,1,0}})).isEqualTo(9);
+        assertThat(Find_the_largest_square.solution(new int[][] {{0,0,1,1},{1,1,1,1}})).isEqualTo(4);
+    }
 }
