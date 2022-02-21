@@ -7,6 +7,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.net.URLEncoder;
 
+import static org.assertj.core.api.Assertions.as;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class Level2ControllerTest {
@@ -138,6 +139,10 @@ public class Level2ControllerTest {
     @Test
     public void 땅따먹기() {
         assertThat(Eat_the_ground.solution(new int[][] {{1, 2, 3, 5}, {5, 6, 7, 8}, {4, 3, 2, 1}})).isEqualTo(16);
+        assertThat(Eat_the_ground.solution(new int[][] {{1, 2, 3, 4}, {1, 2, 3, 4}, {1, 2, 3, 4}})).isEqualTo(11);
+        assertThat(Eat_the_ground.solution(new int[][] {{4, 3, 2, 1}, {2, 2, 2, 1}, {6, 6, 6, 4}, {8, 7, 6, 5}})).isEqualTo(20);
+        assertThat(Eat_the_ground.solution(new int[][] {{4, 3, 2, 1}})).isEqualTo(4);
+        assertThat(Eat_the_ground.solution(new int[][] {{1, 1, 1, 1}, {2, 2, 2, 3}, {3, 3, 3, 6}, {4, 4, 4, 7}})).isEqualTo(14);
     }
 
 
