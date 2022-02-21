@@ -69,7 +69,7 @@ public class Level2ControllerTest {
         assertThat(Keep_distance.solution(new String[][] {{"POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP"}, {"POOPX", "OXPXP", "PXXXO", "OXXXO", "OOOPP"}, {"PXOPX", "OXOXP", "OXPOX", "OXXOP", "PXPOX"}, {"OOOXX", "XOOOX", "OOOXX", "OXOOX", "OOOOO"}, {"PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP"}})).isEqualTo(new int[] {1, 0, 1, 1, 1});
     }
 
-    // Practice 2022-02-18
+    // Practice 2022-02-18 -- 못품
     @Test
     public void 컬러링북() {
         assertThat(Coloring.solution(6, 4, new int[][] {{1,1,1,0}, {1,2,2,0},{1,0,0,1},{0,0,0,1},{0,0,0,3},{0,0,0,3}})).isEqualTo(new int[] {4,5});
@@ -150,5 +150,12 @@ public class Level2ControllerTest {
     public void 가장_큰_정사각형_찾기() {
         assertThat(Find_the_largest_square.solution(new int[][] {{0,1,1,1},{1,1,1,1},{1,1,1,1},{0,0,1,0}})).isEqualTo(9);
         assertThat(Find_the_largest_square.solution(new int[][] {{0,0,1,1},{1,1,1,1}})).isEqualTo(4);
+    }
+
+    // Practice 2022-02-21
+    @Test
+    public void 가장큰수() {
+        assertThat(Biggest_number.solution(new int[] {6, 10, 2})).isEqualTo("6210");
+        assertThat(Biggest_number.solution(new int[] {3, 30, 34, 5, 9})).isEqualTo("9534330");
     }
 }
