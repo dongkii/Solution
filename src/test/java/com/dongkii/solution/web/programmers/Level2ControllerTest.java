@@ -3,6 +3,10 @@ package com.dongkii.solution.web.programmers;
 import com.dongkii.solution.web.programmers.level2.*;
 import org.junit.jupiter.api.Test;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class Level2ControllerTest {
@@ -104,5 +108,13 @@ public class Level2ControllerTest {
     public void 최솟값_만들기() {
         assertThat(MinNumber.solution(new int[] {1, 4, 2}, new int[] {5, 4, 4})).isEqualTo(29);
         assertThat(MinNumber.solution(new int[] {1, 2}, new int[] {3, 4})).isEqualTo(10);
+    }
+
+    // Practice 2022-02-21
+    @Test
+    public void 최댓값과_최솟값() {
+        assertThat(MinMax.solution("1 2 3 4")).isEqualTo("1 4");
+        assertThat(MinMax.solution("-1 -2 -3 -4")).isEqualTo("-4 -1");
+        assertThat(MinMax.solution("-1 -1")).isEqualTo("-1 -1");
     }
 }
