@@ -124,4 +124,13 @@ public class Level2ControllerTest {
         assertThat(NextBigNumber.solution(78)).isEqualTo(83);
         assertThat(NextBigNumber.solution(15)).isEqualTo(23);
     }
+
+    // Practice 2022-02-21
+    @Test
+    public void 올바른괄호() {
+        assertThat(Correct_parenthesis.solution("()()")).isEqualTo(true);
+        assertThat(Correct_parenthesis.solution("(())()")).isEqualTo(true);
+        assertThat(Correct_parenthesis.solution(")()(")).isEqualTo(false);
+        assertThat(Correct_parenthesis.solution("(()(")).isEqualTo(false);
+    }
 }
