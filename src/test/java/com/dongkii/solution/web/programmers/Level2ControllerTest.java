@@ -98,4 +98,11 @@ public class Level2ControllerTest {
     public void 숫자의표현() {
         assertThat(ExpressionOfNumber.solution(15)).isEqualTo(4);
     }
+
+    // Practice 2022-02-21
+    @Test
+    public void 최솟값_만들기() {
+        assertThat(MinNumber.solution(new int[] {1, 4, 2}, new int[] {5, 4, 4})).isEqualTo(29);
+        assertThat(MinNumber.solution(new int[] {1, 2}, new int[] {3, 4})).isEqualTo(10);
+    }
 }
