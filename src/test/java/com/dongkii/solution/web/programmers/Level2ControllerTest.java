@@ -117,4 +117,11 @@ public class Level2ControllerTest {
         assertThat(MinMax.solution("-1 -2 -3 -4")).isEqualTo("-4 -1");
         assertThat(MinMax.solution("-1 -1")).isEqualTo("-1 -1");
     }
+
+    // Practice 2022-02-21
+    @Test
+    public void 다음_큰_숫자() {
+        assertThat(NextBigNumber.solution(78)).isEqualTo(83);
+        assertThat(NextBigNumber.solution(15)).isEqualTo(23);
+    }
 }
