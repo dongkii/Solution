@@ -8,17 +8,10 @@ public class NextBigNumber {
         int cnt = 0;
 
         while(true) {
-            int i = 0;
             int tmpN = tmp;
-            while(Math.pow(2, i) <= tmpN) i++;      // tmp 값의 자리수를 구함
-
             int tmpCnt = 0;
 
-            String tmpStr = "";
-            for(int j = 0; j < i; j++) {        // 2진법으로 표현
-                tmpStr += String.valueOf(tmpN/(int)Math.pow(2, i-j-1));
-                tmpN = tmpN%(int)Math.pow(2, i-j-1);
-            }
+            String tmpStr = Integer.toBinaryString(tmpN);
 
             for(int k = 0; k < tmpStr.length(); k++) {  // 1의 갯수 체크
                 if('1' == tmpStr.charAt(k)) tmpCnt+=1;
