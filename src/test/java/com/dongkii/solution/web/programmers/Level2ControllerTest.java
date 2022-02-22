@@ -158,4 +158,12 @@ public class Level2ControllerTest {
         assertThat(Biggest_number.solution(new int[] {6, 10, 2})).isEqualTo("6210");
         assertThat(Biggest_number.solution(new int[] {3, 30, 34, 5, 9})).isEqualTo("9534330");
     }
+
+    // Practice 2022-02-22
+    @Test
+    public void 행렬_테두리_회전하기() {
+        assertThat(Rotate_Matrix_Borders.solution(6, 6, new int[][] {{2,2,5,4},{3,3,6,6},{5,1,6,3}})).isEqualTo(new int[] {8, 10, 25});
+        assertThat(Rotate_Matrix_Borders.solution(3, 3, new int[][] {{1,1,2,2},{1,2,2,3},{2,1,3,2},{2,2,3,3}})).isEqualTo(new int[] {1,1,5,3});
+        assertThat(Rotate_Matrix_Borders.solution(100, 97, new int[][] {{1,1,100,97}})).isEqualTo(new int[] {1});
+    }
 }

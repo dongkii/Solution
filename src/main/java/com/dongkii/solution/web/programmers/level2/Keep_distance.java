@@ -25,7 +25,7 @@ public class Keep_distance {
             }
 
             for(int a = 0; a < pList.size()-1; a++) {
-                for(int b = + 1; b < pList.size(); b++) {
+                for(int b = a + 1; b < pList.size(); b++) {
                     // 맨해튼 거리 공식 |b1 - a1| + |b2 - a2|
                     int m = Math.abs(pList.get(b)[0] - pList.get(a)[0]) + Math.abs(pList.get(b)[1] - pList.get(a)[1]);
                     if(m == 1) { // 맨해튼 거리가 1이면 파티션이 있을 수 없음
