@@ -173,4 +173,13 @@ public class Level2ControllerTest {
         assertThat(Find_the_number_of_decimalls.solution(437674, 3)).isEqualTo(3);
         assertThat(Find_the_number_of_decimalls.solution(110011, 10)).isEqualTo(2);
     }
+
+    // Practice 2022-02-24
+    @Test
+    public void 방금그곡() {
+        assertThat(Just_that_song.solution("ABCDEFG", new String[] {"12:00,12:14,HELLO,CDEFGAB", "13:00,13:05,WORLD,ABCDEF"})).isEqualTo("HELLO");
+        assertThat(Just_that_song.solution("CC#BCC#BCC#BCC#B", new String[] {"03:00,03:30,FOO,CC#B", "04:00,04:08,BAR,CC#BCC#BCC#B"})).isEqualTo("FOO");
+        assertThat(Just_that_song.solution("ABC", new String[] {"12:00,12:14,HELLO,C#DEFGAB", "13:00,13:05,WORLD,ABCDEF"})).isEqualTo("WORLD");
+        assertThat(Just_that_song.solution("CCB", new String[] {"03:00,03:10,FOO,CCB#CCB", "04:00,04:08,BAR,ABC"})).isEqualTo("FOO");
+    }
 }
