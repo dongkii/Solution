@@ -164,6 +164,13 @@ public class Level2ControllerTest {
     public void 행렬_테두리_회전하기() {
         assertThat(Rotate_Matrix_Borders.solution(6, 6, new int[][] {{2,2,5,4},{3,3,6,6},{5,1,6,3}})).isEqualTo(new int[] {8, 10, 25});
         assertThat(Rotate_Matrix_Borders.solution(3, 3, new int[][] {{1,1,2,2},{1,2,2,3},{2,1,3,2},{2,2,3,3}})).isEqualTo(new int[] {1,1,5,3});
-        assertThat(Rotate_Matrix_Borders.solution(100, 97, new int[][] {{1,1,100,97}})).isEqualTo(new int[] {1});
+        assertThat(Rotate_Matrix_Borders.solution(100, 97, new int[][] {{1,1,2,2}, {1,1,2,2}, {1,1,100,97}})).isEqualTo(new int[] {1,1,2});
+    }
+
+    // Practice 2022-02-24
+    @Test
+    public void k진수에서_소수_개수_구하기() {
+        assertThat(Find_the_number_of_decimalls.solution(437674, 3)).isEqualTo(3);
+        assertThat(Find_the_number_of_decimalls.solution(110011, 10)).isEqualTo(2);
     }
 }
