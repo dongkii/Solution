@@ -190,4 +190,12 @@ public class Level2ControllerTest {
         assertThat(Parking_Fee_Calculation.solution(new int[] {120, 0, 60, 591}, new String[] {"16:00 3961 IN","16:00 0202 IN","18:00 3961 OUT","18:00 0202 OUT","23:58 3961 IN"})).isEqualTo(new int[] {0, 591});
         assertThat(Parking_Fee_Calculation.solution(new int[] {1, 461, 1, 10}, new String[] {"00:00 1234 IN"})).isEqualTo(new int[] {14841});
     }
+
+    // Practice 2022-02-25
+    @Test
+    public void JadenCase_문자열_만들기() {
+        assertThat(JadenCase.solution("3people unFollowed me")).isEqualTo("3people Unfollowed Me");
+        assertThat(JadenCase.solution("for the last week")).isEqualTo("For The Last Week");
+        assertThat(JadenCase.solution(" adgagd 3eagdag ")).isEqualTo(" Adgagd 3eagdag ");
+    }
 }
