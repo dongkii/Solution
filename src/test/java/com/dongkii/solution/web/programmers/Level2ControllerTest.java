@@ -182,4 +182,12 @@ public class Level2ControllerTest {
         assertThat(Just_that_song.solution("ABC", new String[] {"12:00,12:14,HELLO,C#DEFGAB", "13:00,13:05,WORLD,ABCDEF"})).isEqualTo("WORLD");
         assertThat(Just_that_song.solution("CCB", new String[] {"03:00,03:10,FOO,CCB#CCB", "04:00,04:08,BAR,ABC"})).isEqualTo("FOO");
     }
+
+    // Practice 2022-02-25
+    @Test
+    public void 주차요금계산() {
+        assertThat(Parking_Fee_Calculation.solution(new int[] {180, 5000, 10, 600}, new String[] {"05:34 5961 IN", "06:00 0000 IN", "06:34 0000 OUT", "07:59 5961 OUT", "07:59 0148 IN", "18:59 0000 IN", "19:09 0148 OUT", "22:59 5961 IN", "23:00 5961 OUT"})).isEqualTo(new int[] {14600, 34400, 5000});
+        assertThat(Parking_Fee_Calculation.solution(new int[] {120, 0, 60, 591}, new String[] {"16:00 3961 IN","16:00 0202 IN","18:00 3961 OUT","18:00 0202 OUT","23:58 3961 IN"})).isEqualTo(new int[] {0, 591});
+        assertThat(Parking_Fee_Calculation.solution(new int[] {1, 461, 1, 10}, new String[] {"00:00 1234 IN"})).isEqualTo(new int[] {14841});
+    }
 }
