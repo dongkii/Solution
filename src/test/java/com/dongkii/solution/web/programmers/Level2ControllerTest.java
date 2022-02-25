@@ -198,4 +198,13 @@ public class Level2ControllerTest {
         assertThat(JadenCase.solution("for the last week")).isEqualTo("For The Last Week");
         assertThat(JadenCase.solution(" adgagd 3eagdag ")).isEqualTo(" Adgagd 3eagdag ");
     }
+
+    // Practice 2022-02-25
+    @Test
+    public void 양궁대회() {
+        assertThat(Archery_competition.solution(5, new int[] {2,1,1,1,0,0,0,0,0,0,0})).isEqualTo(new int[] {0,2,2,0,1,0,0,0,0,0,0});
+        assertThat(Archery_competition.solution(1, new int[] {1,0,0,0,0,0,0,0,0,0,0})).isEqualTo(new int[] {-1});
+        assertThat(Archery_competition.solution(9, new int[] {0,0,1,2,0,1,1,1,1,1,1})).isEqualTo(new int[] {1,1,2,0,1,2,2,0,0,0,0});
+        assertThat(Archery_competition.solution(10, new int[] {0,0,0,0,0,0,0,0,3,4,3})).isEqualTo(new int[] {1,1,1,1,1,1,1,1,0,0,2});
+    }
 }
