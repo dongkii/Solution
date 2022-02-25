@@ -201,6 +201,15 @@ public class Level2ControllerTest {
 
     // Practice 2022-02-25
     @Test
+    public void 영어끝말잇기() {
+        //assertThat(Ending_in_english.solution(3, new String[] {"tank", "kick", "know", "wheel", "land", "dream", "mother", "robot", "tank"})).isEqualTo(new int[] {3, 3});
+        //assertThat(Ending_in_english.solution(5, new String[] {"hello", "observe", "effect", "take", "either", "recognize", "encourage", "ensure", "establish", "hang", "gather", "refer", "reference", "estimate", "executive"})).isEqualTo(new int[] {0, 0});
+        //assertThat(Ending_in_english.solution(2, new String[] {"hello", "one", "even", "never", "now", "world", "draw"})).isEqualTo(new int[] {1, 3});
+        assertThat(Ending_in_english.solution(2, new String[] {"aaab","baa","aa","ba"})).isEqualTo(new int[] {2, 2});
+    }
+
+    //
+    @Test
     public void 양궁대회() {
         assertThat(Archery_competition.solution(5, new int[] {2,1,1,1,0,0,0,0,0,0,0})).isEqualTo(new int[] {0,2,2,0,1,0,0,0,0,0,0});
         assertThat(Archery_competition.solution(1, new int[] {1,0,0,0,0,0,0,0,0,0,0})).isEqualTo(new int[] {-1});
