@@ -215,6 +215,12 @@ public class Level2ControllerTest {
         assertThat(Nnumber_LCM.solution(new int[] {1, 2, 3})).isEqualTo(6);
     }
 
+    // Practice 2022-02-26
+    @Test
+    public void 주식가격() {
+        assertThat(Stock_price.solution(new int[] {1, 2, 3, 2, 3})).isEqualTo(new int[] {4, 3, 1, 1, 0});
+    }
+
     //
     @Test
     public void 양궁대회() {
