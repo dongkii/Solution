@@ -221,6 +221,15 @@ public class Level2ControllerTest {
         assertThat(Stock_price.solution(new int[] {1, 2, 3, 2, 3})).isEqualTo(new int[] {4, 3, 1, 1, 0});
     }
 
+    // Practice 2022-02-26
+    @Test
+    public void 다리를_지나는_트럭() {
+        assertThat(Truck_crossing_the_bridge.solution(2, 10, new int[] {7, 4, 5, 6})).isEqualTo(8);
+        assertThat(Truck_crossing_the_bridge.solution(100, 100, new int[] {10})).isEqualTo(101);
+        assertThat(Truck_crossing_the_bridge.solution(100, 100, new int[] {10,10,10,10,10,10,10,10,10,10})).isEqualTo(110);
+        assertThat(Truck_crossing_the_bridge.solution(5, 5, new int[] {2, 2, 2, 2, 1, 1, 1, 1, 1})).isEqualTo(19);
+    }
+
     //
     @Test
     public void 양궁대회() {
