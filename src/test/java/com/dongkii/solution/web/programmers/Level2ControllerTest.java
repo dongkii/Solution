@@ -208,6 +208,13 @@ public class Level2ControllerTest {
         assertThat(Ending_in_english.solution(2, new String[] {"aaab","baa","aa","ba"})).isEqualTo(new int[] {2, 2});
     }
 
+    // Practice 2022-02-26
+    @Test
+    public void N개의_최소공배수() {
+        assertThat(Nnumber_LCM.solution(new int[] {2, 6, 8, 14})).isEqualTo(168);
+        assertThat(Nnumber_LCM.solution(new int[] {1, 2, 3})).isEqualTo(6);
+    }
+
     //
     @Test
     public void 양궁대회() {
