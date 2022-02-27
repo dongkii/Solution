@@ -230,6 +230,12 @@ public class Level2ControllerTest {
         assertThat(Truck_crossing_the_bridge.solution(5, 5, new int[] {2, 2, 2, 2, 1, 1, 1, 1, 1})).isEqualTo(19);
     }
 
+    // Practice 2022-02-27
+    @Test
+    public void 피로도() {
+        assertThat(Dungeon.solution(80, new int[][] {{80, 20}, {50, 40}, {30, 10}})).isEqualTo(3);
+    }
+
     //
     @Test
     public void 양궁대회() {
