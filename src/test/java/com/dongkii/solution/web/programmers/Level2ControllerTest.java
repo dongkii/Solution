@@ -69,12 +69,6 @@ public class Level2ControllerTest {
         assertThat(Keep_distance.solution(new String[][] {{"POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP"}, {"POOPX", "OXPXP", "PXXXO", "OXXXO", "OOOPP"}, {"PXOPX", "OXOXP", "OXPOX", "OXXOP", "PXPOX"}, {"OOOXX", "XOOOX", "OOOXX", "OXOOX", "OOOOO"}, {"PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP"}})).isEqualTo(new int[] {1, 0, 1, 1, 1});
     }
 
-    // Practice 2022-02-18 -- 못품
-    @Test
-    public void 컬러링북() {
-        assertThat(Coloring.solution(6, 4, new int[][] {{1,1,1,0}, {1,2,2,0},{1,0,0,1},{0,0,0,1},{0,0,0,3},{0,0,0,3}})).isEqualTo(new int[] {4,5});
-    }
-
     // Practice 2022-02-20
     @Test
     public void 행렬의곱셈() {
@@ -236,12 +230,18 @@ public class Level2ControllerTest {
         assertThat(Dungeon.solution(80, new int[][] {{80, 20}, {50, 40}, {30, 10}})).isEqualTo(3);
     }
 
-    //
+    // -- 못품
     @Test
     public void 양궁대회() {
         assertThat(Archery_competition.solution(5, new int[] {2,1,1,1,0,0,0,0,0,0,0})).isEqualTo(new int[] {0,2,2,0,1,0,0,0,0,0,0});
         assertThat(Archery_competition.solution(1, new int[] {1,0,0,0,0,0,0,0,0,0,0})).isEqualTo(new int[] {-1});
         assertThat(Archery_competition.solution(9, new int[] {0,0,1,2,0,1,1,1,1,1,1})).isEqualTo(new int[] {1,1,2,0,1,2,2,0,0,0,0});
         assertThat(Archery_competition.solution(10, new int[] {0,0,0,0,0,0,0,0,3,4,3})).isEqualTo(new int[] {1,1,1,1,1,1,1,1,0,0,2});
+    }
+
+    // -- 못품
+    @Test
+    public void 컬러링북() {
+        assertThat(Coloring.solution(6, 4, new int[][] {{1,1,1,0}, {1,2,2,0},{1,0,0,1},{0,0,0,1},{0,0,0,3},{0,0,0,3}})).isEqualTo(new int[] {4,5});
     }
 }
