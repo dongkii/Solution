@@ -3,37 +3,27 @@ package com.dongkii.solution.web.programmers.level2;
 import java.util.*;
 
 public class Dungeon {
+
+    public static int answer = 0;
+    public static boolean[] visited;
+
     public static int solution(int k, int[][] dungeons) {
-        int answer = 0;
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        visited = new boolean[dungeons.length];
 
-        for(int i = 0; i < dungeons.length; i++) {
-            // 맵에 키값으로 인덱스를, 밸류로 최소피로도와 소모피로도의 차이를 넣는다.
-            int minus = dungeons[i][0] - dungeons[i][1];
-
-            map.put(i, minus);
-        }
-
-        List<Map.Entry<Integer, Integer>> entryList = new LinkedList<>(map.entrySet());
-        entryList.sort(Map.Entry.comparingByValue());
-
-        // 최소피로도와 소모피로도를 기준으로 내림차순 정렬
-        entryList.sort(new Comparator<Map.Entry<Integer, Integer>>() {
-            @Override
-            public int compare(Map.Entry<Integer, Integer> o1, Map.Entry<Integer, Integer> o2) {
-                return o2.getValue() - o1.getValue();
-            }
-        });
-
-        for(Map.Entry<Integer, Integer> entry : entryList) {
-            if( k >= dungeons[entry.getKey()][0]) {
-                k -= dungeons[entry.getKey()][1];
-                answer += 1;
-            } else {
-                break;
-            }
-        }
+        dfs(0, k, dungeons);
 
         return answer;
+    }
+
+    static void dfs(int depth, int k, int[][] dungeons) {
+        for(int i = 0; i < dungeons.length; i++) {
+            if(!visited[i] && dungeons[i][0] <= k) { // 방문하지 않은 던전이고, 필요피로도가 남은피로도보다 적거나 같을 경우
+                visited[i] = true;                   // 해당 던전 방문
+                dfs(depth + 1, k - dungeons[i][1], dungeons);   // 방문한 던전 깊이 1추가, 피로도는 소모피로도만큼 감소
+                visited[i] = false;                  // 던전 초기화
+            }
+        }
+
+        answer = Math.max(answer, depth);
     }
 }
