@@ -230,6 +230,13 @@ public class Level2ControllerTest {
         assertThat(Dungeon.solution(80, new int[][] {{80, 20}, {50, 40}, {30, 10}})).isEqualTo(3);
     }
 
+    // Practice 2022-03-03
+    @Test
+    public void 타겟넘버() {
+        assertThat(Target_Number.solution(new int[] {1, 1, 1, 1, 1}, 3)).isEqualTo(5);
+        assertThat(Target_Number.solution(new int[] {4, 1, 2, 1}, 4)).isEqualTo(2);
+    }
+
     // -- 못품
     @Test
     public void 양궁대회() {
