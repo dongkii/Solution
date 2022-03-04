@@ -7,11 +7,10 @@ public class Printer {
     public static int solution(int[] priorities, int location) {
         int answer = 0;
 
-        int[] numbers = new int[priorities.length];
-
+        // 인트배열을 가진 리스트를 생성
         List<int[]> list = new ArrayList<int[]>();
 
-        // list 초기화
+        // list를 초기화 - 0번째 인덱스는 우선순위, 1번째 인덱스는 위치
         for(int i = 0; i < priorities.length; i++) {
             list.add(new int[] {priorities[i], i});
         }
