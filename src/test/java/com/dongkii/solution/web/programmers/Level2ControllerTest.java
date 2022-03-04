@@ -253,6 +253,16 @@ public class Level2ControllerTest {
         assertThat(Printer.solution(new int[] {7, 2, 1, 2, 9, 6}, 3)).isEqualTo(5);
     }
 
+    // Practice 2022-03-04
+    @Test
+    public void 튜플() {
+        assertThat(Tuple.solution("{{2},{2,1},{2,1,3},{2,1,3,4}}")).isEqualTo(new int[] {2, 1, 3, 4});
+        assertThat(Tuple.solution("{{1,2,3},{2,1},{1,2,4,3},{2}}")).isEqualTo(new int[] {2, 1, 3, 4});
+        assertThat(Tuple.solution("{{20,111},{111}}")).isEqualTo(new int[] {111, 20});
+        assertThat(Tuple.solution("{{123}}")).isEqualTo(new int[] {123});
+        assertThat(Tuple.solution("{{4,2,3},{3},{2,3,4,1},{2,3}}")).isEqualTo(new int[] {3, 2, 4, 1});
+    }
+
     // -- 못품
     @Test
     public void 양궁대회() {
