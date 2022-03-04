@@ -245,6 +245,14 @@ public class Level2ControllerTest {
         assertThat(Carpet.solution(24, 24)).isEqualTo(new int[] {8, 6});
     }
 
+    // Practice 2022-03-04
+    @Test
+    public void 프린터() {
+        assertThat(Printer.solution(new int[] {2, 1, 3, 2}, 2)).isEqualTo(1);
+        assertThat(Printer.solution(new int[] {1, 1, 9, 1, 1, 1}, 0)).isEqualTo(5);
+        assertThat(Printer.solution(new int[] {7, 2, 1, 2, 9, 6}, 3)).isEqualTo(5);
+    }
+
     // -- 못품
     @Test
     public void 양궁대회() {
