@@ -274,6 +274,14 @@ public class Level2ControllerTest {
         assertThat(Cache.solution(0, new String[] {"Jeju", "Pangyo", "Seoul", "NewYork", "LA"})).isEqualTo(25);
     }
 
+    // Practice 2022-03-07
+    @Test
+    public void 점프와_순간_이동() {
+        assertThat(Jump_and_teleport.solution(5)).isEqualTo(2);
+        assertThat(Jump_and_teleport.solution(6)).isEqualTo(2);
+        assertThat(Jump_and_teleport.solution(5000)).isEqualTo(5);
+    }
+
     // -- 못품
     @Test
     public void 양궁대회() {
