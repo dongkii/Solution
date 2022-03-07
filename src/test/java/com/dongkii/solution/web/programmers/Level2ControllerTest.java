@@ -282,6 +282,12 @@ public class Level2ControllerTest {
         assertThat(Jump_and_teleport.solution(5000)).isEqualTo(5);
     }
 
+    // Practice 2022-03-07
+    @Test
+    public void 스킬트리() {
+        assertThat(Skilltree.solution("CBD", new String[] {"BACDE", "CBADF", "AECB", "BDA"})).isEqualTo(2);
+    }
+
     // -- 못품
     @Test
     public void 양궁대회() {
