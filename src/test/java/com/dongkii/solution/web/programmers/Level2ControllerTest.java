@@ -263,6 +263,17 @@ public class Level2ControllerTest {
         assertThat(Tuple.solution("{{4,2,3},{3},{2,3,4,1},{2,3}}")).isEqualTo(new int[] {3, 2, 4, 1});
     }
 
+    // Practice 2022-03-07
+    @Test
+    public void 캐시() {
+        assertThat(Cache.solution(3, new String[] {"Jeju", "Pangyo", "Seoul", "NewYork", "LA", "Jeju", "Pangyo", "Seoul", "NewYork", "LA"})).isEqualTo(50);
+        assertThat(Cache.solution(3, new String[] {"Jeju", "Pangyo", "Seoul", "Jeju", "Pangyo", "Seoul", "Jeju", "Pangyo", "Seoul"})).isEqualTo(21);
+        assertThat(Cache.solution(2, new String[] {"Jeju", "Pangyo", "Seoul", "NewYork", "LA", "SanFrancisco", "Seoul", "Rome", "Paris", "Jeju", "NewYork", "Rome"})).isEqualTo(60);
+        assertThat(Cache.solution(5, new String[] {"Jeju", "Pangyo", "Seoul", "NewYork", "LA", "SanFrancisco", "Seoul", "Rome", "Paris", "Jeju", "NewYork", "Rome"})).isEqualTo(52);
+        assertThat(Cache.solution(2, new String[] {"Jeju", "Pangyo", "NewYork", "newyork"})).isEqualTo(16);
+        assertThat(Cache.solution(0, new String[] {"Jeju", "Pangyo", "Seoul", "NewYork", "LA"})).isEqualTo(25);
+    }
+
     // -- 못품
     @Test
     public void 양궁대회() {
