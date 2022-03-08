@@ -296,7 +296,7 @@ public class Level2ControllerTest {
         assertThat(Triangle_snail.solution(6)).isEqualTo(new int[] {1,2,15,3,16,14,4,17,21,13,5,18,19,20,12,6,7,8,9,10,11});
     }
 
-    // Practice 2022-03-08
+    // -- 못품
     @Test
     public void 후보키() {
         assertThat(Candidate_key.solution(new String[][] {{"100","ryan","music","2"},{"200","apeach","math","2"},{"300","tube","computer","3"},{"400","con","computer","4"},{"500","muzi","music","3"},{"600","apeach","music","2"}})).isEqualTo(2);
