@@ -296,6 +296,15 @@ public class Level2ControllerTest {
         assertThat(Triangle_snail.solution(6)).isEqualTo(new int[] {1,2,15,3,16,14,4,17,21,13,5,18,19,20,12,6,7,8,9,10,11});
     }
 
+    // Practice 2022-03-08
+    @Test
+    public void 괄호_회전하기() {
+        assertThat(Rotate_parenthesis.solution("[](){}")).isEqualTo(3);
+        assertThat(Rotate_parenthesis.solution("}]()[{")).isEqualTo(2);
+        assertThat(Rotate_parenthesis.solution("[)(]")).isEqualTo(0);
+        assertThat(Rotate_parenthesis.solution("}}}")).isEqualTo(0);
+    }
+
     // -- 못품
     @Test
     public void 후보키() {
