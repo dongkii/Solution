@@ -313,6 +313,12 @@ public class Level2ControllerTest {
         assertThat(Repeat_binary_transformation.solution("1111111")).isEqualTo(new int[] {4, 1});
     }
 
+    // Practice 2022-03-08
+    @Test
+    public void 예상_대진표() {
+        assertThat(Anticipated_match.solution(8, 4, 7)).isEqualTo(3);
+    }
+
     // -- 못품
     @Test
     public void 후보키() {
