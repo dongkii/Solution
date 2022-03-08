@@ -305,6 +305,14 @@ public class Level2ControllerTest {
         assertThat(Rotate_parenthesis.solution("}}}")).isEqualTo(0);
     }
 
+    // Practice 2022-03-08
+    @Test
+    public void 이진_변환_반복하기() {
+        assertThat(Repeat_binary_transformation.solution("110010101001")).isEqualTo(new int[] {3, 8});
+        assertThat(Repeat_binary_transformation.solution("01110")).isEqualTo(new int[] {3, 3});
+        assertThat(Repeat_binary_transformation.solution("1111111")).isEqualTo(new int[] {4, 1});
+    }
+
     // -- 못품
     @Test
     public void 후보키() {
