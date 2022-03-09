@@ -319,6 +319,15 @@ public class Level2ControllerTest {
         assertThat(Anticipated_match.solution(8, 4, 7)).isEqualTo(3);
     }
 
+    // Practice 2022-03-09
+    @Test
+    public void 큰_수_만들기() {
+        assertThat(Making_a_big_number.solution("1924", 2)).isEqualTo("94");
+        assertThat(Making_a_big_number.solution("1231234", 3)).isEqualTo("3234");
+        assertThat(Making_a_big_number.solution("4177252841", 4)).isEqualTo("775841");
+        assertThat(Making_a_big_number.solution("987654321", 5)).isEqualTo("9876");
+    }
+
     // -- 못품
     @Test
     public void 후보키() {
