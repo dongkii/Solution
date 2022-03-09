@@ -328,6 +328,14 @@ public class Level2ControllerTest {
         assertThat(Making_a_big_number.solution("987654321", 5)).isEqualTo("9876");
     }
 
+    // Practice 2022-03-09
+    @Test
+    public void 조이스틱() {
+        assertThat(Joystick.solution("JAZ")).isEqualTo(11);
+        assertThat(Joystick.solution("JEROEN")).isEqualTo(56);
+        assertThat(Joystick.solution("JAN")).isEqualTo(23);
+    }
+
     // -- 못품
     @Test
     public void 후보키() {
