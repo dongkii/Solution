@@ -336,6 +336,15 @@ public class Level2ControllerTest {
         assertThat(Joystick.solution("JAN")).isEqualTo(23);
     }
 
+    // Practice 2022-03-10  (테스트케이스 실패하는데 정답은 맞음,, 문제이상)
+    @Test
+    public void H_Index() {
+        assertThat(H_Index.solution(new int[] {3, 0, 6, 1, 5})).isEqualTo(3);
+        assertThat(H_Index.solution(new int[] {3, 4, 5, 11, 15, 16, 17, 18, 19, 20})).isEqualTo(7);
+        assertThat(H_Index.solution(new int[] {88, 89})).isEqualTo(2);
+        assertThat(H_Index.solution(new int[] {0, 1, 2})).isEqualTo(1);
+    }
+
     // -- 못품
     @Test
     public void 후보키() {
