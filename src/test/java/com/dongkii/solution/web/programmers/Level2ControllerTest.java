@@ -359,6 +359,13 @@ public class Level2ControllerTest {
         assertThat(Remove_pair.solution("cdcd")).isEqualTo(0);
     }
 
+    // Practice 2022-03-14
+    @Test
+    public void 구명보트() {
+        assertThat(Rescue_boat.solution(new int[] {70,50,80,50}, 100)).isEqualTo(3);
+        assertThat(Rescue_boat.solution(new int[] {70,80,50}, 100)).isEqualTo(3);
+    }
+
     // -- 못품
     @Test
     public void 후보키() {
