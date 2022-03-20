@@ -352,6 +352,13 @@ public class Level2ControllerTest {
         assertThat(Maximize_the_formula.solution("50*6-3*2")).isEqualTo(300);
     }
 
+    // Practice 2022-03-20
+    @Test
+    public void 배달() {
+        //assertThat(Delivery.solution(5, new int[][] {{1,2,1},{2,3,3},{5,2,2},{1,4,2},{5,3,1},{5,4,2}}, 3)).isEqualTo(4);
+        assertThat(Delivery.solution(6, new int[][] {{1,2,1},{1,3,2},{2,3,2},{3,4,3},{3,5,2},{3,5,3},{5,6,1}}, 4)).isEqualTo(4);
+    }
+
     // -- 못품
     @Test
     public void 후보키() {
