@@ -48,4 +48,29 @@ public class EtcControllerTest {
        assertThat(Q4.solution(new int[] {1,2,3,4}, new int[] {4,5,6,7})).isEqualTo(4);
        assertThat(Q4.solution(new int[] {1,2,3,4}, new int[] {4,5,6,7})).isEqualTo(4);
     }
+
+    // CP Q1
+    @Test
+    public void CPQ1() {
+        assertThat(CPQ1.solution(6, new int[][] {{1,3,1},{3,5,0},{5,4,0},{2,5,0}})).isEqualTo("O?O?X?");
+        assertThat(CPQ1.solution(7, new int[][] {{5,6,0},{1,3,1},{1,5,0},{7,6,0},{3,7,1},{2,5,0}})).isEqualTo("O?O?XXO");
+    }
+
+    // CP Q2
+    @Test
+    public void CPQ2() {
+        assertThat(CPQ2.solution(4)).isEqualTo(new long[] {-1, -1});
+        assertThat(CPQ2.solution(6)).isEqualTo(new long[] {2, 3});
+        assertThat(CPQ2.solution(12)).isEqualTo(new long[] {-1, -1});
+        assertThat(CPQ2.solution(39)).isEqualTo(new long[] {3, 13});
+        assertThat(CPQ2.solution(26)).isEqualTo(new long[] {2, 13});
+        assertThat(CPQ2.solution(77)).isEqualTo(new long[] {7, 11});
+    }
+
+    // CP Q3
+    @Test
+    public void CPQ3() {
+        assertThat(CPQ3.solution(new int[][] {{3,2,3,2},{2,1,1,2},{1,1,2,1},{4,1,1,1}})).isEqualTo(7);
+        assertThat(CPQ3.solution(new int[][] {{4,2,3,2},{2,1,2,4},{1,2,3,1},{4,1,4,3}})).isEqualTo(-1);
+    }
 }
