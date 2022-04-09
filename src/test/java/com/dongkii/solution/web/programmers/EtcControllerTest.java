@@ -88,4 +88,31 @@ public class EtcControllerTest {
         assertThat(DMQ2.solution(new String[] {"abcabcab","????????"})).isEqualTo(0);
         assertThat(DMQ2.solution(new String[] {"aa?"})).isEqualTo(3);
     }
+
+    // TQ1
+    @Test
+    public void TQ1() {
+        assertThat(TQ1.solution("EEESEEEEEENNNN")).isEqualTo(new String[] {"Time 0: Go straight 300m and turn right","Time 3: Go straight 100m and turn left","Time 5: Go straight 500m and turn left"});
+        assertThat(TQ1.solution("SSSSSSWWWNNNNNN")).isEqualTo(new String[] {"Time 1: Go straight 500m and turn right","Time 6: Go straight 300m and turn right"});
+    }
+
+    // TQ2
+    @Test
+    public void TQ2() {
+        assertThat(TQ2.solution("abcabcdefabc")).isEqualTo("def");
+        assertThat(TQ2.solution("abxdeydeabz")).isEqualTo("xyz");
+        assertThat(TQ2.solution("abcabca")).isEqualTo("bcbc");
+        assertThat(TQ2.solution("ABCabcA")).isEqualTo("BCbc");
+    }
+
+    // TQ3
+    @Test
+    public void TQ3() {
+        //assertThat(TQ3.solution("this is {template} {template} is {state}", new String[][] {{"template", "string"}, {"state", "changed"}})).isEqualTo("this is string string is changed");
+        //assertThat(TQ3.solution("this is {template} {template} is {state}", new String[][] {{"template", "string"}, {"state", "{template}"}})).isEqualTo("this is string string is string");
+        //assertThat(TQ3.solution("this is {template} {template} is {state}", new String[][] {{"template", "{state}"}, {"state", "{templates}"}})).isEqualTo("this is {templates} {templates} is {templates}");
+
+        assertThat(TQ3.solution("this is {template} {template} is {state}", new String[][] {{"template", "{state}"}, {"state", "{template}"}})).isEqualTo("this is {template} {template} is {state}");
+        //assertThat(TQ3.solution("{a} {b} {c} {d} {i}", new String[][] {{"b", "{c}"}, {"a", "{b}"}, {"e", "{f}"}, {"h", "i"}, {"d", "{e}"}, {"f", "{d}"}, {"c", "d"}})).isEqualTo("d d d {d} {i}");
+    }
 }
