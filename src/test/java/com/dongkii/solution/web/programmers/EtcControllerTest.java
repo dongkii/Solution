@@ -134,4 +134,12 @@ public class EtcControllerTest {
                                                         Arrays.asList(new Integer[]{5, 15}),
                                                         Arrays.asList(new Integer[]{5, 30})))).isEqualTo(1);
     }
+
+    // NQ2
+    @Test
+    public void NQ2() {
+        assertThat(NQ2.decode("23511011501782351112179911801562340161171141148")).isEqualTo("Truth Always Wins ");
+        assertThat(NQ2.decode("2312179862310199501872379231018117927")).isEqualTo("Have a Nice Day ");
+        assertThat(NQ2.decode("1219950180111108236115111016623101401611235115012312161151110101111127")).isEqualTo("Honesty is the Best Policy");
+    }
 }
