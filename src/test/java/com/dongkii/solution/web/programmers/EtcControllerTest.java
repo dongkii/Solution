@@ -142,4 +142,13 @@ public class EtcControllerTest {
         assertThat(NQ2.decode("2312179862310199501872379231018117927")).isEqualTo("Have a Nice Day ");
         assertThat(NQ2.decode("1219950180111108236115111016623101401611235115012312161151110101111127")).isEqualTo("Honesty is the Best Policy");
     }
+
+    // NQ3
+    @Test
+    public void NQ3() {
+        assertThat(NQ3.sExpression("(B,D) (D,E) (A,B) (C,F) (E,G) (A,C)")).isEqualTo("(A(B(D(E(G))))(C(F)))");
+        assertThat(NQ3.sExpression("(Y,V) (V,X) (Y,W) (W,A) (V,U) (W,Z)")).isEqualTo("(A(B(D(E(G))))(C(F)))");
+        assertThat(NQ3.sExpression("(Y,V) (V,X) (Y,W) (W,A) (V,U) (W,Z)")).isEqualTo("(A(B(D(E(G))))(C(F)))");
+        assertThat(NQ3.sExpression("(D,N) (W,H) (G,I) (P,E) (B,P) (X,A) (Z,Y) (B,G) (P,Q) (G,F) (W,M) (Z,D) (X,Z) (A,W) (D,S) (A,B)")).isEqualTo("(A(B(D(E(G))))(C(F)))");
+    }
 }
