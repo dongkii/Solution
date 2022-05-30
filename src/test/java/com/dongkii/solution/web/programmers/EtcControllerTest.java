@@ -3,6 +3,10 @@ package com.dongkii.solution.web.programmers;
 import com.dongkii.solution.web.programmers.Etc.*;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class EtcControllerTest {
@@ -114,5 +118,20 @@ public class EtcControllerTest {
 
         assertThat(TQ3.solution("this is {template} {template} is {state}", new String[][] {{"template", "{state}"}, {"state", "{template}"}})).isEqualTo("this is {template} {template} is {state}");
         //assertThat(TQ3.solution("{a} {b} {c} {d} {i}", new String[][] {{"b", "{c}"}, {"a", "{b}"}, {"e", "{f}"}, {"h", "i"}, {"d", "{e}"}, {"f", "{d}"}, {"c", "d"}})).isEqualTo("d d d {d} {i}");
+    }
+
+    // NTQ1
+    @Test
+    public void NTQ1() {
+        assertThat(NTQ1.fizzBuzz(15)).isEqualTo("");
+    }
+
+    // NQ1
+    @Test
+    public void NQ1() {
+        assertThat(NQ1.solution(Arrays.asList(new Integer[]{20, 5, 6, 7, 12}),
+                            Arrays.asList(Arrays.asList(new Integer[]{10, 20}),
+                                                        Arrays.asList(new Integer[]{5, 15}),
+                                                        Arrays.asList(new Integer[]{5, 30})))).isEqualTo(1);
     }
 }
