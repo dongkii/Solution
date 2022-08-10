@@ -151,4 +151,12 @@ public class EtcControllerTest {
         assertThat(NQ3.sExpression("(Y,V) (V,X) (Y,W) (W,A) (V,U) (W,Z)")).isEqualTo("(A(B(D(E(G))))(C(F)))");
         assertThat(NQ3.sExpression("(D,N) (W,H) (G,I) (P,E) (B,P) (X,A) (Z,Y) (B,G) (P,Q) (G,F) (W,M) (Z,D) (X,Z) (A,W) (D,S) (A,B)")).isEqualTo("(A(B(D(E(G))))(C(F)))");
     }
+
+    // QL1
+    @Test
+    public void QL1() {
+        assertThat(QL1.solution(123456789)).isEqualTo("123,456,789");
+        assertThat(QL1.solution(1234567)).isEqualTo("1,234,567");
+        assertThat(QL1.solution(-12345678)).isEqualTo("-12,345,678");
+    }
 }
