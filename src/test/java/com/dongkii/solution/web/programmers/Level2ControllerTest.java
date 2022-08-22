@@ -393,4 +393,11 @@ public class Level2ControllerTest {
     public void 컬러링북() {
         assertThat(Coloring.solution(6, 4, new int[][] {{1,1,1,0}, {1,2,2,0},{1,0,0,1},{0,0,0,1},{0,0,0,3},{0,0,0,3}})).isEqualTo(new int[] {4,5});
     }
+
+    @Test
+    public void 두_큐_합_같게_만들기() {
+        assertThat(QueueSum.solution(new int[] {3, 2, 7, 2}, new int[] {4, 6, 5, 1})).isEqualTo(2);
+        assertThat(QueueSum.solution(new int[] {1, 2, 1, 2}, new int[] {1, 10, 1, 2})).isEqualTo(7);
+        assertThat(QueueSum.solution(new int[] {1, 1}, new int[] {1, 5})).isEqualTo(-1);
+    }
 }
