@@ -207,4 +207,10 @@ public class Level1ControllerTest {
         assertThat(Ponketmon.solution(new int[] {3,3,3,2,2,4})).isEqualTo(3);
         assertThat(Ponketmon.solution(new int[] {3,3,3,2,2,2})).isEqualTo(2);
     }
+
+    @Test
+    public void 성격_유형_검사하기() {
+        assertThat(Survey.solution(new String[] {"AN", "CF", "MJ", "RT", "NA"}, new int[] {5, 3, 2, 7, 5})).isEqualTo("TCMA");
+        assertThat(Survey.solution(new String[] {"TR", "RT", "TR"}, new int[] {7, 1, 3})).isEqualTo("RCJA");
+    }
 }
