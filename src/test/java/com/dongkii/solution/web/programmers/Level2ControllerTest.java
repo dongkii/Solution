@@ -400,4 +400,9 @@ public class Level2ControllerTest {
         assertThat(QueueSum.solution(new int[] {1, 2, 1, 2}, new int[] {1, 10, 1, 2})).isEqualTo(7);
         assertThat(QueueSum.solution(new int[] {1, 1}, new int[] {1, 5})).isEqualTo(-1);
     }
+
+    @Test
+    public void 하노이의_탑() {
+        assertThat(Hanoi.solution(2)).isEqualTo(new int[][] {{1, 2}, {1, 3}, {2, 3}});
+    }
 }
