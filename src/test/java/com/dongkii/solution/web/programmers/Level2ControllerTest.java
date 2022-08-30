@@ -413,4 +413,10 @@ public class Level2ControllerTest {
         assertThat(ParenthesisConversion.solution("))((()")).isEqualTo("(())()");
         assertThat(ParenthesisConversion.solution("()))((()")).isEqualTo("()(())()");
     }
+
+    @Test
+    public void 소수찾기() {
+        assertThat(Find_Minority.solution("17")).isEqualTo(3);
+        assertThat(Find_Minority.solution("011")).isEqualTo(2);
+    }
 }
