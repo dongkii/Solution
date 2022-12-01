@@ -56,4 +56,11 @@ public class Level0ControllerTest {
         assertThat(cutAndSaveArray.solution("abc1Addfggg4556b", 6)).isEqualTo(new String[] {"abc1Ad", "dfggg4", "556b"});
         assertThat(cutAndSaveArray.solution("abcdef123", 3)).isEqualTo(new String[] {"abc", "def", "123"});
     }
+
+    //20221201
+    @Test
+    public void 문자열에서7의개수() {
+        assertThat(sevenCount.solution(new int[] {7, 77, 17})).isEqualTo(4);
+        assertThat(sevenCount.solution(new int[] {10, 29})).isEqualTo(0);
+    }
 }
