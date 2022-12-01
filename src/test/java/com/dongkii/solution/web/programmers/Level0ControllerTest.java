@@ -63,4 +63,12 @@ public class Level0ControllerTest {
         assertThat(sevenCount.solution(new int[] {7, 77, 17})).isEqualTo(4);
         assertThat(sevenCount.solution(new int[] {10, 29})).isEqualTo(0);
     }
+
+    //20221201
+    @Test
+    public void 문자열정렬하기() {
+        assertThat(stringSort.solution("Bcad")).isEqualTo("abcd");
+        assertThat(stringSort.solution("heLLo")).isEqualTo("ehllo");
+        assertThat(stringSort.solution("Python")).isEqualTo("hnopty");
+    }
 }
