@@ -1,9 +1,6 @@
 package com.dongkii.solution.web.programmers;
 
-import com.dongkii.solution.web.programmers.level0.babbling;
-import com.dongkii.solution.web.programmers.level0.nextInteger;
-import com.dongkii.solution.web.programmers.level0.paperCutting;
-import com.dongkii.solution.web.programmers.level0.sumOfConsecutiveNum;
+import com.dongkii.solution.web.programmers.level0.*;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -44,5 +41,12 @@ public class Level0ControllerTest {
         assertThat(paperCutting.solution(2, 5)).isEqualTo(9);
         assertThat(paperCutting.solution(1, 1)).isEqualTo(0);
         assertThat(paperCutting.solution(3, 5)).isEqualTo(14);
+    }
+
+    //20221201
+    @Test
+    public void 문자열밀기() {
+        assertThat(stringPush.solution("hello", "ohell")).isEqualTo(1);
+        assertThat(stringPush.solution("apple", "elppa")).isEqualTo(-1);
     }
 }
