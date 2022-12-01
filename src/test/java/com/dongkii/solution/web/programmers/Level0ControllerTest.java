@@ -85,4 +85,25 @@ public class Level0ControllerTest {
         assertThat(squareNumber.solution(144)).isEqualTo(1);
         assertThat(squareNumber.solution(976)).isEqualTo(2);
     }
+
+    //20221201
+    @Test
+    public void 문자안에문자열() {
+        assertThat(stringInString.solution("ab6CDE443fgh22iJKlmn1o", "6CD")).isEqualTo(1);
+        assertThat(stringInString.solution("ppprrrogrammers", "pppp")).isEqualTo(2);
+    }
+
+    //20221201
+    @Test
+    public void OX퀴즈() {
+        assertThat(oxQuiz.solution(new String[] {"3 - 4 = -3", "5 + 6 = 11"})).isEqualTo(new String[] {"X", "O"});
+        assertThat(oxQuiz.solution(new String[] {"19 - 6 = 13", "5 + 66 = 71", "5 - 15 = 63", "3 - 1 = 2"})).isEqualTo(new String[] {"O", "O", "X", "O"});
+    }
+
+    //20221201
+    @Test
+    public void 자리수더하기() {
+        assertThat(addDigit.solution(1234)).isEqualTo(10);
+        assertThat(addDigit.solution(930211)).isEqualTo(16);
+    }
 }
