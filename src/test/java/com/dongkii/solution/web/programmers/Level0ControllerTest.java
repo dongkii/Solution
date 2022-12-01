@@ -49,4 +49,11 @@ public class Level0ControllerTest {
         assertThat(stringPush.solution("hello", "ohell")).isEqualTo(1);
         assertThat(stringPush.solution("apple", "elppa")).isEqualTo(-1);
     }
+
+    //20221201
+    @Test
+    public void 잘라서배열로저장하기() {
+        assertThat(cutAndSaveArray.solution("abc1Addfggg4556b", 6)).isEqualTo(new String[] {"abc1Ad", "dfggg4", "556b"});
+        assertThat(cutAndSaveArray.solution("abcdef123", 3)).isEqualTo(new String[] {"abc", "def", "123"});
+    }
 }
