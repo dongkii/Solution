@@ -2,11 +2,8 @@ package com.dongkii.solution.web.programmers;
 
 import com.dongkii.solution.web.programmers.level0.babbling;
 import com.dongkii.solution.web.programmers.level0.nextInteger;
-<<<<<<< HEAD
 import com.dongkii.solution.web.programmers.level0.paperCutting;
 import com.dongkii.solution.web.programmers.level0.sumOfConsecutiveNum;
-=======
->>>>>>> 9bb9c8c238968a85cedd6a999d4de3418c28ae6d
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
