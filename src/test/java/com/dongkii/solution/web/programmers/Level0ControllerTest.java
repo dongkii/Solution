@@ -71,4 +71,11 @@ public class Level0ControllerTest {
         assertThat(stringSort.solution("heLLo")).isEqualTo("ehllo");
         assertThat(stringSort.solution("Python")).isEqualTo("hnopty");
     }
+
+    //20221201
+    @Test
+    public void 세균증식() {
+        assertThat(bacterialGrowth.solution(2, 10)).isEqualTo(2048);
+        assertThat(bacterialGrowth.solution(7, 15)).isEqualTo(229376);
+    }
 }
