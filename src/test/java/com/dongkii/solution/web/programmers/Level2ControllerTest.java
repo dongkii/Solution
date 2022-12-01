@@ -405,4 +405,18 @@ public class Level2ControllerTest {
     public void 하노이의_탑() {
         assertThat(Hanoi.solution(2)).isEqualTo(new int[][] {{1, 2}, {1, 3}, {2, 3}});
     }
+
+    @Test
+    public void 괄호변환() {
+        assertThat(ParenthesisConversion.solution("(()())()")).isEqualTo("(()())()");
+        assertThat(ParenthesisConversion.solution(")(")).isEqualTo("()");
+        assertThat(ParenthesisConversion.solution("))((()")).isEqualTo("(())()");
+        assertThat(ParenthesisConversion.solution("()))((()")).isEqualTo("()(())()");
+    }
+
+    @Test
+    public void 소수찾기() {
+        assertThat(Find_Minority.solution("17")).isEqualTo(3);
+        assertThat(Find_Minority.solution("011")).isEqualTo(2);
+    }
 }
