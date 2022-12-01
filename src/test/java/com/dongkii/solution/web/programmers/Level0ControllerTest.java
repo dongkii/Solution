@@ -78,4 +78,11 @@ public class Level0ControllerTest {
         assertThat(bacterialGrowth.solution(2, 10)).isEqualTo(2048);
         assertThat(bacterialGrowth.solution(7, 15)).isEqualTo(229376);
     }
+
+    //20221201
+    @Test
+    public void 제곱수판별() {
+        assertThat(squareNumber.solution(144)).isEqualTo(1);
+        assertThat(squareNumber.solution(976)).isEqualTo(2);
+    }
 }
