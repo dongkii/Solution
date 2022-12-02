@@ -213,4 +213,12 @@ public class Level1ControllerTest {
         assertThat(Survey.solution(new String[] {"AN", "CF", "MJ", "RT", "NA"}, new int[] {5, 3, 2, 7, 5})).isEqualTo("TCMA");
         assertThat(Survey.solution(new String[] {"TR", "RT", "TR"}, new int[] {7, 1, 3})).isEqualTo("RCJA");
     }
+
+    // 20221202
+    @Test
+    public void 문자열나누기() {
+        //assertThat(stringSplit.solution("banana")).isEqualTo(3);
+        //assertThat(stringSplit.solution("abracadabra")).isEqualTo(6);
+        assertThat(stringSplit.solution("aaabbaccccabba")).isEqualTo(3);
+    }
 }
