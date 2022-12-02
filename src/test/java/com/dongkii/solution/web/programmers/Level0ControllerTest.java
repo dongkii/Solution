@@ -122,4 +122,11 @@ public class Level0ControllerTest {
         assertThat(weapons.solution(5, 3, 2)).isEqualTo(10);
         assertThat(weapons.solution(10, 3, 2)).isEqualTo(21);
     }
+
+    //20221202
+    @Test
+    public void 모스부호() {
+        assertThat(morseCode.solution(".... . .-.. .-.. ---")).isEqualTo("hello");
+        assertThat(morseCode.solution(".--. -.-- - .... --- -.")).isEqualTo("python");
+    }
 }
