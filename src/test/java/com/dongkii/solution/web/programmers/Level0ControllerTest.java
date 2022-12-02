@@ -1,6 +1,8 @@
 package com.dongkii.solution.web.programmers;
 
 import com.dongkii.solution.web.programmers.level0.*;
+import com.dongkii.solution.web.programmers.level1.hallOfFame;
+import com.dongkii.solution.web.programmers.level1.weapons;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -105,5 +107,19 @@ public class Level0ControllerTest {
     public void 자리수더하기() {
         assertThat(addDigit.solution(1234)).isEqualTo(10);
         assertThat(addDigit.solution(930211)).isEqualTo(16);
+    }
+
+    //20221201
+    @Test
+    public void 명예의전당() {
+        assertThat(hallOfFame.solution(3, new int[] {10, 100, 20, 150, 1, 100, 200})).isEqualTo(new int[] {10, 10, 10, 20, 20, 100, 100});
+        assertThat(hallOfFame.solution(4, new int[] {0, 300, 40, 300, 20, 70, 150, 50, 500, 1000})).isEqualTo(new int[] {0, 0, 0, 0, 20, 40, 70, 70, 150, 300});
+    }
+
+    //20221201
+    @Test
+    public void 기사단원의무기() {
+        assertThat(weapons.solution(5, 3, 2)).isEqualTo(10);
+        assertThat(weapons.solution(10, 3, 2)).isEqualTo(21);
     }
 }
