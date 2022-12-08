@@ -269,4 +269,11 @@ public class Level1ControllerTest {
         assertThat(babbling2.solution(new String[] {"yeye"})).isEqualTo(0);
         assertThat(babbling2.solution(new String[] {"yeayaye"})).isEqualTo(1);
     }
+
+    //20221208
+    @Test
+    public void 콜라문제() {
+        assertThat(colaProblem.solution(2, 1, 20)).isEqualTo(19);
+        assertThat(colaProblem.solution(3, 1, 20)).isEqualTo(9);
+    }
 }
