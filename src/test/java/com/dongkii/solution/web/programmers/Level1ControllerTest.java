@@ -259,4 +259,14 @@ public class Level1ControllerTest {
         assertThat(hamburger.solution(new int[] {1,2,1,2,3,1,3,1,2,3,1,2,3,1})).isEqualTo(3);
     }
 
+    //20221208
+    @Test
+    public void 옹알이2() {
+        assertThat(babbling2.solution(new String[] {"aya", "yee", "u", "maa", "yeaya"})).isEqualTo(2);
+        assertThat(babbling2.solution(new String[] {"ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"})).isEqualTo(2);
+        assertThat(babbling2.solution(new String[] {"aya","aya","aya","woo"})).isEqualTo(4);
+        assertThat(babbling2.solution(new String[] {"woayao"})).isEqualTo(0);
+        assertThat(babbling2.solution(new String[] {"yeye"})).isEqualTo(0);
+        assertThat(babbling2.solution(new String[] {"yeayaye"})).isEqualTo(1);
+    }
 }
