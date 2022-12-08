@@ -242,4 +242,11 @@ public class Level1ControllerTest {
         assertThat(fruitSeller.solution(3, 4, new int[] {1, 2, 3, 1, 2, 3, 1})).isEqualTo(8);
         assertThat(fruitSeller.solution(4, 3, new int[] {4, 1, 2, 2, 4, 4, 4, 4, 1, 2, 4, 2})).isEqualTo(33);
     }
+
+    //20221208
+    @Test
+    public void 푸드파이트대회() {
+        assertThat(foodFight.solution(new int[] {1, 3, 4, 6})).isEqualTo("1223330333221");
+        assertThat(foodFight.solution(new int[] {1, 7, 1, 2})).isEqualTo("111303111");
+    }
 }
