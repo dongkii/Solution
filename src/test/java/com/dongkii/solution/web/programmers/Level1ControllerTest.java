@@ -276,4 +276,12 @@ public class Level1ControllerTest {
         assertThat(colaProblem.solution(2, 1, 20)).isEqualTo(19);
         assertThat(colaProblem.solution(3, 1, 20)).isEqualTo(9);
     }
+
+    //20221208
+    @Test
+    public void 삼총사() {
+        assertThat(trio.solution(new int[] {-2, 3, 0, 2, -5})).isEqualTo(2);
+        assertThat(trio.solution(new int[] {-3, -2, -1, 0, 1, 2, 3})).isEqualTo(5);
+        assertThat(trio.solution(new int[] {-1, 1, -1, 1})).isEqualTo(0);
+    }
 }
