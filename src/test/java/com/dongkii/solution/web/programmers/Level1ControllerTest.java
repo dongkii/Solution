@@ -214,11 +214,25 @@ public class Level1ControllerTest {
         assertThat(Survey.solution(new String[] {"TR", "RT", "TR"}, new int[] {7, 1, 3})).isEqualTo("RCJA");
     }
 
-    // 20221202
+    //20221201
+    @Test
+    public void 명예의전당() {
+        assertThat(hallOfFame.solution(3, new int[] {10, 100, 20, 150, 1, 100, 200})).isEqualTo(new int[] {10, 10, 10, 20, 20, 100, 100});
+        assertThat(hallOfFame.solution(4, new int[] {0, 300, 40, 300, 20, 70, 150, 50, 500, 1000})).isEqualTo(new int[] {0, 0, 0, 0, 20, 40, 70, 70, 150, 300});
+    }
+
+    // 20221208
     @Test
     public void 문자열나누기() {
         assertThat(stringSplit.solution("banana")).isEqualTo(3);
         assertThat(stringSplit.solution("abracadabra")).isEqualTo(6);
         assertThat(stringSplit.solution("aaabbaccccabba")).isEqualTo(3);
+    }
+
+    //20221208
+    @Test
+    public void 기사단원의무기() {
+        assertThat(weapons.solution(5, 3, 2)).isEqualTo(10);
+        assertThat(weapons.solution(10, 3, 2)).isEqualTo(21);
     }
 }
