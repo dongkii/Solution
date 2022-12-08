@@ -284,4 +284,14 @@ public class Level1ControllerTest {
         assertThat(trio.solution(new int[] {-3, -2, -1, 0, 1, 2, 3})).isEqualTo(5);
         assertThat(trio.solution(new int[] {-1, 1, -1, 1})).isEqualTo(0);
     }
+
+    //20221208
+    @Test
+    public void 숫자짝꿍() {
+        assertThat(numberPair.solution("100", "2345")).isEqualTo("-1");
+        assertThat(numberPair.solution("100", "203045")).isEqualTo("0");
+        assertThat(numberPair.solution("100", "123450")).isEqualTo("10");
+        assertThat(numberPair.solution("12321", "42531")).isEqualTo("321");
+        assertThat(numberPair.solution("5525", "1255")).isEqualTo("552");
+    }
 }

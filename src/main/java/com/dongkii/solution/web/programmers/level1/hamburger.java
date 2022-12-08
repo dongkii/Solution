@@ -1,9 +1,5 @@
 package com.dongkii.solution.web.programmers.level1;
 
-import com.sun.org.apache.xpath.internal.operations.String;
-
-import java.util.Arrays;
-
 public class hamburger {
     public static int solution(int[] ingredient) {
         int answer = 0;
