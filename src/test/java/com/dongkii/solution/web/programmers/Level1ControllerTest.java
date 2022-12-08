@@ -249,4 +249,14 @@ public class Level1ControllerTest {
         assertThat(foodFight.solution(new int[] {1, 3, 4, 6})).isEqualTo("1223330333221");
         assertThat(foodFight.solution(new int[] {1, 7, 1, 2})).isEqualTo("111303111");
     }
+
+    //20221208
+    @Test
+    public void 햄버거만들기() {
+        assertThat(hamburger.solution(new int[] {2, 1, 1, 2, 3, 1, 2, 3, 1})).isEqualTo(2);
+        assertThat(hamburger.solution(new int[] {1, 3, 2, 1, 2, 1, 3, 1, 2})).isEqualTo(0);
+        assertThat(hamburger.solution(new int[] {1, 2, 3, 1, 1, 2, 3, 1})).isEqualTo(2);
+        assertThat(hamburger.solution(new int[] {1,2,1,2,3,1,3,1,2,3,1,2,3,1})).isEqualTo(3);
+    }
+
 }
