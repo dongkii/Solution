@@ -10,30 +10,25 @@ public class stringSplit {
         Stack<String> st2 = new Stack<>();
 
         char[] strArr = s.toCharArray();
-        String preStr = "";
-        String result = "";
+        String x = "";
 
         for(int i=0; i < strArr.length; i++) {
             String tmp = String.valueOf(strArr[i]);
-            if(st1.isEmpty() || tmp.equals(st1.peek())) {
-                System.out.println("st1");
+            if(st1.empty() && st2.empty()) {
+                x = tmp;
+            }
+
+            if(x.equals(tmp)) {
                 st1.push(tmp);
-            } else if(st2.isEmpty() || tmp.equals(st2.peek())){
-                System.out.println("st2");
+            } else if(!x.equals(tmp)) {
                 st2.push(tmp);
             }
 
-            result += tmp;
-
-            if (st1.size() == st2.size()) {
-                System.out.println(result);
-                result = "";
+            if(st1.size() == st2.size()) {
+                answer++;
                 st1.clear();
                 st2.clear();
-                answer++;
             }
-
-            preStr = tmp;
         }
 
         if(st1.size() != st2.size()) answer++;

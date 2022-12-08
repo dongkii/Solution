@@ -217,8 +217,8 @@ public class Level1ControllerTest {
     // 20221202
     @Test
     public void 문자열나누기() {
-        //assertThat(stringSplit.solution("banana")).isEqualTo(3);
-        //assertThat(stringSplit.solution("abracadabra")).isEqualTo(6);
+        assertThat(stringSplit.solution("banana")).isEqualTo(3);
+        assertThat(stringSplit.solution("abracadabra")).isEqualTo(6);
         assertThat(stringSplit.solution("aaabbaccccabba")).isEqualTo(3);
     }
 }
