@@ -235,4 +235,11 @@ public class Level1ControllerTest {
         assertThat(weapons.solution(5, 3, 2)).isEqualTo(10);
         assertThat(weapons.solution(10, 3, 2)).isEqualTo(21);
     }
+
+    //20221208
+    @Test
+    public void 과일장수() {
+        assertThat(fruitSeller.solution(3, 4, new int[] {1, 2, 3, 1, 2, 3, 1})).isEqualTo(8);
+        assertThat(fruitSeller.solution(4, 3, new int[] {4, 1, 2, 2, 4, 4, 4, 4, 1, 2, 4, 2})).isEqualTo(33);
+    }
 }
