@@ -419,4 +419,15 @@ public class Level2ControllerTest {
         assertThat(Find_Minority.solution("17")).isEqualTo(3);
         assertThat(Find_Minority.solution("011")).isEqualTo(2);
     }
+
+    //20221209
+    @Test
+    public void 모음사전() {
+        assertThat(vowelDictionary.solution("AAAAE")).isEqualTo(6);
+        assertThat(vowelDictionary.solution("AAAE")).isEqualTo(10);
+        assertThat(vowelDictionary.solution("I")).isEqualTo(1563);
+        assertThat(vowelDictionary.solution("EIO")).isEqualTo(1189);
+    }
+
+
 }
