@@ -429,5 +429,10 @@ public class Level2ControllerTest {
         assertThat(vowelDictionary.solution("EIO")).isEqualTo(1189);
     }
 
-
+    //20221209
+    @Test
+    public void 멀리뛰기() {
+        assertThat(longJump.solution(4)).isEqualTo(5);
+        assertThat(longJump.solution(3)).isEqualTo(3);
+    }
 }
