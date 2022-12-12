@@ -3,9 +3,7 @@ package com.dongkii.solution.web.programmers;
 import com.dongkii.solution.web.programmers.Etc.*;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -159,4 +157,18 @@ public class EtcControllerTest {
         assertThat(QL1.solution(1234567)).isEqualTo("1,234,567");
         assertThat(QL1.solution(-12345678)).isEqualTo("-12,345,678");
     }
+
+    @Test
+    public void YQ1() {
+        assertThat(YQ1.solution(new String[] {"co", "dil", "ity"})).isEqualTo(5);
+    }
+
+    @Test
+    public void YQ2() {
+        assertThat(YQ2.solution(new int[] {10, -10, -1, -1, 10})).isEqualTo(1);
+        assertThat(YQ2.solution(new int[] {-1, -1, -1, 1, 1, 1, 1})).isEqualTo(3);
+        assertThat(YQ2.solution(new int[] {5, -2, -3, 1})).isEqualTo(0);
+    }
+
+
 }

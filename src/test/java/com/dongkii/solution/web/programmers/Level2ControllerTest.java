@@ -435,4 +435,17 @@ public class Level2ControllerTest {
         assertThat(longJump.solution(4)).isEqualTo(5);
         assertThat(longJump.solution(3)).isEqualTo(3);
     }
+
+    //20221209
+    @Test
+    public void 배열자르기() {
+        assertThat(arrayCutting.solution(3, 2, 5)).isEqualTo(new int[] {3, 2, 2, 3});
+        assertThat(arrayCutting.solution(4, 7, 14)).isEqualTo(new int[] {4,3,3,3,4,4,4,4});
+    }
+
+    //20221209
+    @Test
+    public void 다른비트() {
+        assertThat(anotherBit.solution(new long[] {2, 7})).isEqualTo(new long[] {3, 11});
+    }
 }
