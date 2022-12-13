@@ -448,4 +448,11 @@ public class Level2ControllerTest {
     public void 다른비트() {
         assertThat(anotherBit.solution(new long[] {2, 7})).isEqualTo(new long[] {3, 11});
     }
+
+    //20221213
+    @Test
+    public void 할인행사() {
+        assertThat(discountEvent.solution(new String[] {"banana", "apple", "rice", "pork", "pot"}, new int[] {3, 2, 2, 2, 1}, new String[] {"chicken", "apple", "apple", "banana", "rice", "apple", "pork", "banana", "pork", "rice", "pot", "banana", "apple", "banana"})).isEqualTo(3);
+        assertThat(discountEvent.solution(new String[] {"apple"}, new int[] {10}, new String[] {"banana", "banana", "banana", "banana", "banana", "banana", "banana", "banana", "banana", "banana"})).isEqualTo(0);
+    }
 }

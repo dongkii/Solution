@@ -11,6 +11,7 @@ public class anotherBit {
         for(int i = 0; i < numbers.length; i++) {
             now = numbers[i];
             tmp = now;
+            n=0;
             while(tmp > 0) {
                 if(tmp%2 == 0)
                     break;
