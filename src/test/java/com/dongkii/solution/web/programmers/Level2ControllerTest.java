@@ -455,4 +455,10 @@ public class Level2ControllerTest {
         assertThat(discountEvent.solution(new String[] {"banana", "apple", "rice", "pork", "pot"}, new int[] {3, 2, 2, 2, 1}, new String[] {"chicken", "apple", "apple", "banana", "rice", "apple", "pork", "banana", "pork", "rice", "pot", "banana", "apple", "banana"})).isEqualTo(3);
         assertThat(discountEvent.solution(new String[] {"apple"}, new int[] {10}, new String[] {"banana", "banana", "banana", "banana", "banana", "banana", "banana", "banana", "banana", "banana"})).isEqualTo(0);
     }
+    
+    @Test
+    public void 숫자블록() {
+        assertThat(numberBlock.solution(1, 10)).isEqualTo(new int[] {0, 1, 1, 2, 1, 3, 1, 4, 3, 5});
+        assertThat(numberBlock.solution(2, 10)).isEqualTo(new int[] {1, 1, 2, 1, 3, 1, 4, 3, 5});
+    }
 }
