@@ -113,4 +113,11 @@ public class Level0ControllerTest {
         assertThat(morseCode.solution(".... . .-.. .-.. ---")).isEqualTo("hello");
         assertThat(morseCode.solution(".--. -.-- - .... --- -.")).isEqualTo("python");
     }
+
+    //20221214
+    @Test
+    public void 팩토리얼() {
+        assertThat(factorial.solution(3628800)).isEqualTo(10);
+        assertThat(factorial.solution(7)).isEqualTo(3);
+    }
 }
