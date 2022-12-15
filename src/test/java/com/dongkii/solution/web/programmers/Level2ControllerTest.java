@@ -461,4 +461,15 @@ public class Level2ControllerTest {
         assertThat(numberBlock.solution(1, 10)).isEqualTo(new int[] {0, 1, 1, 2, 1, 3, 1, 4, 3, 5});
         assertThat(numberBlock.solution(2, 10)).isEqualTo(new int[] {1, 1, 2, 1, 3, 1, 4, 3, 5});
     }
+    
+    @Test
+    public void 뉴스클러스터링() {
+        assertThat(newsClustering.solution("FRANCE", "french")).isEqualTo(16384);
+        assertThat(newsClustering.solution("handshake", "shake hands")).isEqualTo(65536);
+        assertThat(newsClustering.solution("aa1+aa2", "AAAA12")).isEqualTo(43690);
+        assertThat(newsClustering.solution("E=M*C^2", "e=m*c^2")).isEqualTo(65536);
+        assertThat(newsClustering.solution("aaa", "aaaa")).isEqualTo(43690);
+        assertThat(newsClustering.solution("BAAAA", "AAA")).isEqualTo(32768);
+        assertThat(newsClustering.solution("BBAAAA", "AAABBB")).isEqualTo(28086);
+    }
 }
