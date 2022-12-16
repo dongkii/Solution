@@ -461,7 +461,8 @@ public class Level2ControllerTest {
         assertThat(numberBlock.solution(1, 10)).isEqualTo(new int[] {0, 1, 1, 2, 1, 3, 1, 4, 3, 5});
         assertThat(numberBlock.solution(2, 10)).isEqualTo(new int[] {1, 1, 2, 1, 3, 1, 4, 3, 5});
     }
-    
+
+    //20221215
     @Test
     public void 뉴스클러스터링() {
         assertThat(newsClustering.solution("FRANCE", "french")).isEqualTo(16384);
@@ -471,5 +472,27 @@ public class Level2ControllerTest {
         assertThat(newsClustering.solution("aaa", "aaaa")).isEqualTo(43690);
         assertThat(newsClustering.solution("BAAAA", "AAA")).isEqualTo(32768);
         assertThat(newsClustering.solution("BBAAAA", "AAABBB")).isEqualTo(28086);
+    }
+
+    //20221216
+    @Test
+    public void 택배상자() {
+        assertThat(deliveryBox.solution(new int[] {4, 3, 1, 2, 5})).isEqualTo(2);
+        assertThat(deliveryBox.solution(new int[] {5, 4, 3, 2, 1})).isEqualTo(5);
+        assertThat(deliveryBox.solution(new int[] {5, 2, 3, 4, 1})).isEqualTo(1);
+        assertThat(deliveryBox.solution(new int[] {1, 2, 4, 3, 5})).isEqualTo(5);
+        assertThat(deliveryBox.solution(new int[] {1, 5, 3, 2, 4})).isEqualTo(2);
+        assertThat(deliveryBox.solution(new int[] {2, 1, 4, 3, 6, 5, 8, 7, 10, 9})).isEqualTo(10);
+        assertThat(deliveryBox.solution(new int[] {1, 2, 3, 4, 5})).isEqualTo(5);
+        assertThat(deliveryBox.solution(new int[] {4, 5, 3, 2, 1})).isEqualTo(5);
+        //assertThat(deliveryBox.solution(new int[] {3, 4, 5, 2, 1})).isEqualTo(5);
+        //assertThat(deliveryBox.solution(new int[] {2, 3, 4, 5, 1})).isEqualTo(5);
+        assertThat(deliveryBox.solution(new int[] {4, 5, 1, 2, 3})).isEqualTo(2);
+        assertThat(deliveryBox.solution(new int[] {1, 5, 2, 4, 3})).isEqualTo(2);
+        assertThat(deliveryBox.solution(new int[] {1, 5, 3, 4, 2})).isEqualTo(2);
+        assertThat(deliveryBox.solution(new int[] {3, 5, 4, 2, 1})).isEqualTo(5);
+        //assertThat(deliveryBox.solution(new int[] {3, 2, 1, 6, 7, 5, 4})).isEqualTo(7);
+        assertThat(deliveryBox.solution(new int[] {2, 1, 6, 7, 5, 4, 3})).isEqualTo(7);
+        assertThat(deliveryBox.solution(new int[] {2, 1, 6, 5, 4, 8, 9, 7, 3})).isEqualTo(9);
     }
 }
