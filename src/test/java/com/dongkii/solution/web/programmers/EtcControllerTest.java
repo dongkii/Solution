@@ -170,5 +170,21 @@ public class EtcControllerTest {
         assertThat(YQ2.solution(new int[] {5, -2, -3, 1})).isEqualTo(0);
     }
 
+    @Test
+    public void HQ1() {
+        //assertThat(HQ1.solution(2, new int[][] {{0, 10}, {1, 5}, {2, 7}, {3, 4}})).isEqualTo(0);
+        //assertThat(HQ1.solution(3, new int[][] {{1, 20}, {2, 10}, {3, 5}, {4, 9}, {6, 8}})).isEqualTo(1);
+    }
 
+    @Test
+    public void HQ2() {
+        assertThat(HQ2.solution(6, 2, 4)).isEqualTo(5);
+        assertThat(HQ2.solution(4, 1, 3)).isEqualTo(6);
+    }
+
+    /*@Test
+    public void HQ3() {
+        assertThat(HQ3.solution(new int[] {2, 1, 3}, 4)).isEqualTo(3);
+        assertThat(HQ3.solution(new int[] {3, 3, 5, 5}, 7)).isEqualTo(10);
+    }*/
 }
