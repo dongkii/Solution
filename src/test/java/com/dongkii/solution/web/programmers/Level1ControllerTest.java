@@ -294,4 +294,10 @@ public class Level1ControllerTest {
         assertThat(numberPair.solution("12321", "42531")).isEqualTo("321");
         assertThat(numberPair.solution("5525", "1255")).isEqualTo("552");
     }
+
+    @Test
+    public void 가장가까운글자() {
+        assertThat(nearestLetter.solution("banana")).isEqualTo(new int[] {-1, -1, -1, 2, 2, 2});
+        assertThat(nearestLetter.solution("foobar")).isEqualTo(new int[] {-1, -1, 1, -1, -1, -1});
+    }
 }
