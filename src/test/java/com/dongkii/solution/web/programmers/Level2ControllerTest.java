@@ -515,4 +515,11 @@ public class Level2ControllerTest {
                         "- and - and - and chicken 100",
                         "- and - and - and - 150"})).isEqualTo(new int[] {1, 1, 1, 1, 2, 4});
     }
+
+    //20221220
+    @Test
+    public void 디펜스게임() {
+        assertThat(defenceGame.solution(7, 3, new int[] {4, 2, 4, 5, 3, 3, 1})).isEqualTo(5);
+        assertThat(defenceGame.solution(2, 4, new int[] {3, 3, 3, 3})).isEqualTo(4);
+    }
 }
