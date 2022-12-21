@@ -522,4 +522,12 @@ public class Level2ControllerTest {
         assertThat(defenceGame.solution(7, 3, new int[] {4, 2, 4, 5, 3, 3, 1})).isEqualTo(5);
         assertThat(defenceGame.solution(2, 4, new int[] {3, 3, 3, 3})).isEqualTo(4);
     }
+
+    //20221221
+    @Test
+    public void 숫자카드나누기() {
+        assertThat(numberCard.solution(new int[] {10, 17}, new int[] {5, 20})).isEqualTo(0);
+        assertThat(numberCard.solution(new int[] {10, 20}, new int[] {5, 17})).isEqualTo(10);
+        assertThat(numberCard.solution(new int[] {14, 35, 119}, new int[] {18, 30, 102})).isEqualTo(7);
+    }
 }
