@@ -535,6 +535,6 @@ public class Level2ControllerTest {
     @Test
     public void 카카오프렌즈() {
         kakaoFriends kakaoFriends = new kakaoFriends();
-        assertThat(kakaoFriends.solutiion(6, 4, new int[][] {{1, 1, 1, 0}, {1, 2, 2, 0}, {1, 0, 0, 1}, {0, 0, 0 ,1}, {0, 0, 0, 3}, {0, 0, 0, 3}})).isEqualTo(new int[] {4, 5});
+        assertThat(kakaoFriends.solution(6, 4, new int[][] {{1, 1, 1, 0}, {1, 2, 2, 0}, {1, 0, 0, 1}, {0, 0, 0 ,1}, {0, 0, 0, 3}, {0, 0, 0, 3}})).isEqualTo(new int[] {4, 5});
     }
 }
