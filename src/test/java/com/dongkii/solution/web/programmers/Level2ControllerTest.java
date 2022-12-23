@@ -537,4 +537,12 @@ public class Level2ControllerTest {
         kakaoFriends kakaoFriends = new kakaoFriends();
         assertThat(kakaoFriends.solution(6, 4, new int[][] {{1, 1, 1, 0}, {1, 2, 2, 0}, {1, 0, 0, 1}, {0, 0, 0 ,1}, {0, 0, 0, 3}, {0, 0, 0, 3}})).isEqualTo(new int[] {4, 5});
     }
+    
+    //20221223
+    @Test
+    public void 귤고르기() {
+        assertThat(tangerine.solution(6, new int[] {1, 3, 2, 5, 4, 5, 2, 3})).isEqualTo(3);
+        assertThat(tangerine.solution(4, new int[] {1, 3, 2, 5, 4, 5, 2, 3})).isEqualTo(2);
+        assertThat(tangerine.solution(2, new int[] {1, 1, 1, 1, 2, 2, 2, 3})).isEqualTo(1);
+    }
 }
