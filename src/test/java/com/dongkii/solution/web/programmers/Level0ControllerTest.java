@@ -120,4 +120,11 @@ public class Level0ControllerTest {
         assertThat(factorial.solution(3628800)).isEqualTo(10);
         assertThat(factorial.solution(7)).isEqualTo(3);
     }
+
+    //20221227
+    @Test
+    public void 아이스아메리카노() {
+        assertThat(iceAmericano.solution(5500)).isEqualTo(new int[] {1, 0});
+        assertThat(iceAmericano.solution(15000)).isEqualTo(new int[] {2, 4000});
+    }
 }
