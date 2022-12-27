@@ -545,4 +545,12 @@ public class Level2ControllerTest {
         assertThat(tangerine.solution(4, new int[] {1, 3, 2, 5, 4, 5, 2, 3})).isEqualTo(2);
         assertThat(tangerine.solution(2, new int[] {1, 1, 1, 1, 2, 2, 2, 3})).isEqualTo(1);
     }
+    
+    //20221227
+    @Test
+    public void 빛의경로사이클() {
+        assertThat(lightPathCycle.solution(new String[] {"SL", "LR"})).isEqualTo(new int[] {16});
+        assertThat(lightPathCycle.solution(new String[] {"S"})).isEqualTo(new int[] {1, 1, 1, 1});
+        assertThat(lightPathCycle.solution(new String[] {"R", "R"})).isEqualTo(new int[] {4, 4});
+    }
 }
