@@ -553,4 +553,12 @@ public class Level2ControllerTest {
         assertThat(lightPathCycle.solution(new String[] {"S"})).isEqualTo(new int[] {1, 1, 1, 1});
         assertThat(lightPathCycle.solution(new String[] {"R", "R"})).isEqualTo(new int[] {4, 4});
     }
+    
+    //20221228
+    @Test
+    public void 압축() {
+        assertThat(compression.solution("KAKAO")).isEqualTo(new int[] {11, 1, 27, 15});
+        assertThat(compression.solution("TOBEORNOTTOBEORTOBEORNOT")).isEqualTo(new int[] {20, 15, 2, 5, 15, 18, 14, 15, 20, 27, 29, 31, 36, 30, 32, 34});
+        assertThat(compression.solution("ABABABABABABABAB")).isEqualTo(new int[] {1, 2, 27, 29, 28, 31, 30});
+    }
 }
