@@ -301,4 +301,12 @@ public class Level1ControllerTest {
         assertThat(nearestLetter.solution("banana")).isEqualTo(new int[] {-1, -1, -1, 2, 2, 2});
         assertThat(nearestLetter.solution("foobar")).isEqualTo(new int[] {-1, -1, 1, -1, -1, -1});
     }
+    
+    //20221228
+    @Test
+    public void 크기가작은부분문자열() {
+        assertThat(smallSubstring.solution("3141592", "271")).isEqualTo(2);
+        assertThat(smallSubstring.solution("500220839878", "7")).isEqualTo(8);
+        assertThat(smallSubstring.solution("10203", "15")).isEqualTo(3);
+    }
 }
