@@ -570,9 +570,16 @@ public class Level2ControllerTest {
     }
 
     //20221229
+    // 테스트 성공 - 실행 실패
     @Test
     public void nQueen() {
         assertThat(nQueen.solution(4)).isEqualTo(2);
         //assertThat(nQueen.solution(5)).isEqualTo(3);
+    }
+
+    //20221229
+    @Test
+    public void nQueen2() {
+        assertThat(nQueen2.solution(4)).isEqualTo(2);
     }
 }
