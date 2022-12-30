@@ -582,4 +582,11 @@ public class Level2ControllerTest {
     public void nQueen2() {
         assertThat(nQueen2.solution(4)).isEqualTo(2);
     }
+    
+    //20221230
+    @Test
+    public void 롤케이크_자르기() {
+        assertThat(rollCake.solution(new int[] {1, 2, 1, 3, 1, 4, 1, 2})).isEqualTo(2);
+        assertThat(rollCake.solution(new int[] {1, 2, 3, 1, 4})).isEqualTo(0);
+    }
 }
