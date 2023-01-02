@@ -148,4 +148,10 @@ public class Level0ControllerTest {
     public void 배열의유사도() {
         assertThat(ArraySimilarity.solution(new String[] {"a", "b", "c"}, new String[] {"com", "b", "d", "p", "c"})).isEqualTo(2);
     }
+    
+    //20230102
+    @Test
+    public void n의배수고르기() {
+        assertThat(pickMultiple.solution(3, new int[] {4, 5, 6, 7, 8, 9, 10, 11, 12})).isEqualTo(new int[] {6,  9, 12});
+    }
 }
