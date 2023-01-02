@@ -142,4 +142,10 @@ public class Level0ControllerTest {
         assertThat(reverseArray.solution(new int[] {1, 1, 1, 1, 1, 2})).isEqualTo(new int[] {2, 1, 1, 1, 1, 1});
         assertThat(reverseArray.solution(new int[] {1, 0, 1, 1, 1, 3, 5})).isEqualTo(new int[] {5, 3, 1, 1, 1, 0, 1});
     }
+    
+    //20230102
+    @Test
+    public void 배열의유사도() {
+        assertThat(ArraySimilarity.solution(new String[] {"a", "b", "c"}, new String[] {"com", "b", "d", "p", "c"})).isEqualTo(2);
+    }
 }

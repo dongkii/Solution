@@ -1,8 +1,5 @@
 package com.dongkii.solution.web.programmers.level0;
 
-import java.util.Arrays;
-import java.util.Collections;
-
 public class reverseArray {
     public static int[] solution(int[] num_list) {
         int[] answer = new int[num_list.length];
