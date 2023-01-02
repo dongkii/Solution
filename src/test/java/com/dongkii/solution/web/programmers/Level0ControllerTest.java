@@ -161,4 +161,10 @@ public class Level0ControllerTest {
         assertThat(rotateArray.solution(new int[] {1, 2, 3}, "right")).isEqualTo(new int[] {3, 1, 2});
         assertThat(rotateArray.solution(new int[] {4, 455, 6, 4, -1, 45, 6}, "left")).isEqualTo(new int[] {455, 6, 4, -1, 45, 6, 4});
     }
+
+    //20230102
+    @Test
+    public void 진료순서정하기() {
+        assertThat(emergencyOrder.solution(new int[] {3, 76, 24})).isEqualTo(new int[] {3, 1, 2});
+    }
 }
