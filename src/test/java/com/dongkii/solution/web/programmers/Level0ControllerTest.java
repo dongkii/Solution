@@ -127,4 +127,11 @@ public class Level0ControllerTest {
         assertThat(iceAmericano.solution(5500)).isEqualTo(new int[] {1, 0});
         assertThat(iceAmericano.solution(15000)).isEqualTo(new int[] {2, 4000});
     }
+
+    //20230102
+    @Test
+    public void 중복된숫자개수() {
+        assertThat(numberOfDuplicate.solution(new int[] {1, 1, 2, 3, 4, 5}, 1)).isEqualTo(2);
+        assertThat(numberOfDuplicate.solution(new int[] {0, 2, 3, 4}, 1)).isEqualTo(0);
+    }
 }
