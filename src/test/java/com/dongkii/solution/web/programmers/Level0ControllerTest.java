@@ -154,4 +154,11 @@ public class Level0ControllerTest {
     public void n의배수고르기() {
         assertThat(pickMultiple.solution(3, new int[] {4, 5, 6, 7, 8, 9, 10, 11, 12})).isEqualTo(new int[] {6,  9, 12});
     }
+
+    //20230102
+    @Test
+    public void 배열회전() {
+        assertThat(rotateArray.solution(new int[] {1, 2, 3}, "right")).isEqualTo(new int[] {3, 1, 2});
+        assertThat(rotateArray.solution(new int[] {4, 455, 6, 4, -1, 45, 6}, "left")).isEqualTo(new int[] {455, 6, 4, -1, 45, 6, 4});
+    }
 }
