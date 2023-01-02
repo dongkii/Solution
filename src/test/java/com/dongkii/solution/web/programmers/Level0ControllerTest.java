@@ -134,4 +134,12 @@ public class Level0ControllerTest {
         assertThat(numberOfDuplicate.solution(new int[] {1, 1, 2, 3, 4, 5}, 1)).isEqualTo(2);
         assertThat(numberOfDuplicate.solution(new int[] {0, 2, 3, 4}, 1)).isEqualTo(0);
     }
+    
+    //20230102
+    @Test
+    public void 배열뒤집기() {
+        assertThat(reverseArray.solution(new int[] {1, 2, 3, 4, 5})).isEqualTo(new int[] {5, 4, 3, 2, 1});
+        assertThat(reverseArray.solution(new int[] {1, 1, 1, 1, 1, 2})).isEqualTo(new int[] {2, 1, 1, 1, 1, 1});
+        assertThat(reverseArray.solution(new int[] {1, 0, 1, 1, 1, 3, 5})).isEqualTo(new int[] {5, 3, 1, 1, 1, 0, 1});
+    }
 }
