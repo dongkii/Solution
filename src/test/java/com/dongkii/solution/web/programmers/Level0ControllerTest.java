@@ -175,4 +175,10 @@ public class Level0ControllerTest {
         assertThat(oneAppear.solution("abdc")).isEqualTo("abcd");
         assertThat(oneAppear.solution("hello")).isEqualTo("eho");
     }
+
+    //20230103
+    @Test
+    public void 이진수더하기() {
+        assertThat(binarySum.solution("10", "11")).isEqualTo("101");
+    }
 }
