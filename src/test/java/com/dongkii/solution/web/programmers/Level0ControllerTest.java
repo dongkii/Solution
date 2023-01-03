@@ -181,4 +181,11 @@ public class Level0ControllerTest {
     public void 이진수더하기() {
         assertThat(binarySum.solution("10", "11")).isEqualTo("101");
     }
+    
+    //20230103
+    @Test
+    public void 소인수분해() {
+        assertThat(factorization.solution(12)).isEqualTo(new int[] {2, 3});
+        assertThat(factorization.solution(420)).isEqualTo(new int[] {2, 3, 5, 7});
+    }
 }
