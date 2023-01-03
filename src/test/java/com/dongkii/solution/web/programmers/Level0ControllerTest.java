@@ -167,4 +167,12 @@ public class Level0ControllerTest {
     public void 진료순서정하기() {
         assertThat(emergencyOrder.solution(new int[] {3, 76, 24})).isEqualTo(new int[] {3, 1, 2});
     }
+    
+    //02230103
+    @Test
+    public void 한번만_등장한_문자() {
+        assertThat(oneAppear.solution("abcabcadc")).isEqualTo("d");
+        assertThat(oneAppear.solution("abdc")).isEqualTo("abcd");
+        assertThat(oneAppear.solution("hello")).isEqualTo("eho");
+    }
 }
