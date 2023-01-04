@@ -194,4 +194,10 @@ public class Level0ControllerTest {
     public void 구슬을_나누는_경우의_수() {
         assertThat(combi.solution(3, 2)).isEqualTo(3);
     }
+
+    //20230104
+    @Test
+    public void 등수매기기() {
+        assertThat(orderFix.solution(new int[][] {{80, 70}, {90, 50}, {40, 70}, {50, 80}})).isEqualTo(new int[] {1, 2, 4, 3});
+    }
 }
