@@ -188,4 +188,10 @@ public class Level0ControllerTest {
         assertThat(factorization.solution(12)).isEqualTo(new int[] {2, 3});
         assertThat(factorization.solution(420)).isEqualTo(new int[] {2, 3, 5, 7});
     }
+
+    //20230104
+    @Test
+    public void 구슬을_나누는_경우의_수() {
+        assertThat(combi.solution(3, 2)).isEqualTo(3);
+    }
 }
