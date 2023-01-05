@@ -214,4 +214,11 @@ public class Level0ControllerTest {
         assertThat(polynomialSum.solution("3x + 7 + x")).isEqualTo("4x + 7");
         assertThat(polynomialSum.solution("x + x + x")).isEqualTo("3x");
     }
+    
+    //20230105
+    @Test
+    public void 분수의덧셈() {
+        //assertThat(fractionalAdd.solution(1, 2, 3, 4)).isEqualTo(new int[] {5, 4});
+        assertThat(fractionalAdd.solution(9, 2, 1, 3)).isEqualTo(new int[] {29, 6});
+    }
 }
