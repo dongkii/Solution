@@ -207,4 +207,11 @@ public class Level0ControllerTest {
         assertThat(unusualArrangement.solution(new int[] {1, 2, 3, 4, 5, 6}, 4)).isEqualTo(new int[] {4, 5, 3, 6, 2, 1});
         assertThat(unusualArrangement.solution(new int[] {600, 400, 300, 200, 700, 800, 100, 900}, 500)).isEqualTo(new int[] {600, 400, 700, 300, 800, 200, 900, 100});
     }
+    
+    //20230105
+    @Test
+    public void 다항식더하기() {
+        assertThat(polynomialSum.solution("3x + 7 + x")).isEqualTo("4x + 7");
+        assertThat(polynomialSum.solution("x + x + x")).isEqualTo("3x");
+    }
 }
