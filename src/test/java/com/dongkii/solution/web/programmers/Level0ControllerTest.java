@@ -221,4 +221,10 @@ public class Level0ControllerTest {
         //assertThat(fractionalAdd.solution(1, 2, 3, 4)).isEqualTo(new int[] {5, 4});
         assertThat(fractionalAdd.solution(9, 2, 1, 3)).isEqualTo(new int[] {29, 6});
     }
+
+    //20230105
+    @Test
+    public void 안전지대() {
+        assertThat(safetyZone.solution(new int[][] {{0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 1, 0, 0}, {0, 0, 0, 0, 0}})).isEqualTo(16);
+    }
 }
