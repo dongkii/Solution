@@ -589,4 +589,17 @@ public class Level2ControllerTest {
         assertThat(rollCake.solution(new int[] {1, 2, 1, 3, 1, 4, 1, 2})).isEqualTo(2);
         assertThat(rollCake.solution(new int[] {1, 2, 3, 1, 4})).isEqualTo(0);
     }
+
+    //20230111
+    @Test
+    public void 마법의엘리베이터() {
+        assertThat(storey.solution(16)).isEqualTo(6);
+        assertThat(storey.solution(2554)).isEqualTo(16);
+        assertThat(storey.solution(678)).isEqualTo(8);
+        assertThat(storey.solution(95)).isEqualTo(6);
+        assertThat(storey.solution(45)).isEqualTo(9);
+        assertThat(storey.solution(55)).isEqualTo(10);
+        assertThat(storey.solution(545)).isEqualTo(14);
+        assertThat(storey.solution(545)).isEqualTo(14);
+    }
 }
