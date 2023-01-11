@@ -602,4 +602,10 @@ public class Level2ControllerTest {
         assertThat(storey.solution(545)).isEqualTo(14);
         assertThat(storey.solution(545)).isEqualTo(14);
     }
+    
+    //20230111
+    @Test
+    public void 유사칸토어비트열() {
+        assertThat(similarBitArray.solution(2, 4, 17)).isEqualTo(8);
+    }
 }
