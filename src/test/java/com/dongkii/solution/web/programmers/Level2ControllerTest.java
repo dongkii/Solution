@@ -608,4 +608,11 @@ public class Level2ControllerTest {
     public void 유사칸토어비트열() {
         assertThat(similarBitArray.solution(2, 4, 17)).isEqualTo(8);
     }
+    
+    //20230111
+    @Test
+    public void 점찍기() {
+        assertThat(dotted.solution(2, 4)).isEqualTo(6);
+        assertThat(dotted.solution(1, 5)).isEqualTo(26);
+    }
 }
