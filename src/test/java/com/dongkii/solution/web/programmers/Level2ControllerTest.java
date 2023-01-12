@@ -615,4 +615,10 @@ public class Level2ControllerTest {
         assertThat(dotted.solution(2, 4)).isEqualTo(6);
         assertThat(dotted.solution(1, 5)).isEqualTo(26);
     }
+
+    //20230112
+    @Test
+    public void 연속_부분_수열_합의_개수() {
+        assertThat(consecutiveSubsequences.solution(new int[] {7, 9, 1, 1, 4})).isEqualTo(18);
+    }
 }
