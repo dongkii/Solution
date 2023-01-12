@@ -621,4 +621,13 @@ public class Level2ControllerTest {
     public void 연속_부분_수열_합의_개수() {
         assertThat(consecutiveSubsequences.solution(new int[] {7, 9, 1, 1, 4})).isEqualTo(18);
     }
+
+    //20230112
+    @Test
+    public void 줄서는방법() {
+        assertThat(lineUp.solution(3, 5)).isEqualTo(new int[] {3, 1, 2});
+        assertThat(lineUp.solution(4, 8)).isEqualTo(new int[] {2, 1, 4, 3});
+        assertThat(lineUp.solution(4, 1)).isEqualTo(new int[] {1, 2, 3, 4});
+        assertThat(lineUp.solution(4, 24)).isEqualTo(new int[] {4, 3, 2, 1});
+    }
 }
