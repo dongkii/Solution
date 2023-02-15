@@ -20,7 +20,7 @@ public class tableHashFunction {
         for(int i = row_begin; i < row_end+1; i++) {
             int sum = 0;
 
-            for(int j = 0; j < data[i].length; j++) {
+            for(int j = 0; j < data[i-1].length; j++) {
                 sum += data[i-1][j]%i;
             }
             list.add(sum);
