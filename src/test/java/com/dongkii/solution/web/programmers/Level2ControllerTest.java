@@ -630,4 +630,10 @@ public class Level2ControllerTest {
         assertThat(lineUp.solution(4, 1)).isEqualTo(new int[] {1, 2, 3, 4});
         assertThat(lineUp.solution(4, 24)).isEqualTo(new int[] {4, 3, 2, 1});
     }
+
+    //20230116
+    @Test
+    public void 테이블해시함수() {
+        assertThat(tableHashFunction.solution(new int[][] {{2,2,6},{1,5,10},{4,2,9},{3,8,3}}, 2, 2, 3)).isEqualTo(4);
+    }
 }
