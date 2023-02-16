@@ -636,4 +636,11 @@ public class Level2ControllerTest {
     public void 테이블해시함수() {
         assertThat(tableHashFunction.solution(new int[][] {{2,2,6},{1,5,10},{4,2,9},{3,8,3}}, 2, 2, 3)).isEqualTo(4);
     }
+
+    //20230216
+    @Test
+    public void 방문길이() {
+        assertThat(visitLength.solution("ULURRDLLU")).isEqualTo(7);
+        assertThat(visitLength.solution("LULLLLLLU")).isEqualTo(7);
+    }
 }
