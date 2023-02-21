@@ -322,4 +322,11 @@ public class Level1ControllerTest {
     public void 둘만의암호() {
         assertThat(secretNumber.solution("aukks", "wbqd", 5)).isEqualTo("happy");
     }
+
+    //20230221
+    @Test
+    public void 카드뭉치() {
+        assertThat(cardBundle.solution(new String[]{"i", "drink", "water"}, new String[]{"want", "to"}, new String[]{"i", "want", "to", "drink", "water"})).isEqualTo("Yes");
+        assertThat(cardBundle.solution(new String[]{"i", "water", "drink"}, new String[]{"want", "to"}, new String[]{"i", "want", "to", "drink", "water"})).isEqualTo("No");
+    }
 }
