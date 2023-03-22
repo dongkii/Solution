@@ -338,4 +338,12 @@ public class Level1ControllerTest {
         assertThat(appendColor.solution(4, 1, new int[] {1, 2, 3, 4})).isEqualTo(4);
         assertThat(appendColor.solution(8, 2, new int[] {2, 6})).isEqualTo(2);
     }
+
+    //20230322
+    @Test
+    public void 대충만든자판() {
+        assertThat(keyboard.solution(new String[] {"ABACD", "BCEFD"}, new String[]{"ABCD", "AABB"})).isEqualTo(new int[] {9, 4});
+        assertThat(keyboard.solution(new String[] {"AA"}, new String[]{"B"})).isEqualTo(new int[] {-1});
+        assertThat(keyboard.solution(new String[] {"AGZ", "BSSS"}, new String[]{"ASA", "BGZ"})).isEqualTo(new int[] {4, 6});
+    }
 }
