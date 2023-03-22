@@ -329,4 +329,13 @@ public class Level1ControllerTest {
         assertThat(cardBundle.solution(new String[]{"i", "drink", "water"}, new String[]{"want", "to"}, new String[]{"i", "want", "to", "drink", "water"})).isEqualTo("Yes");
         assertThat(cardBundle.solution(new String[]{"i", "water", "drink"}, new String[]{"want", "to"}, new String[]{"i", "want", "to", "drink", "water"})).isEqualTo("No");
     }
+
+    //20230322
+    @Test
+    public void 덧칠하기() {
+        assertThat(appendColor.solution(8, 4, new int[] {2, 3, 6})).isEqualTo(2);
+        assertThat(appendColor.solution(5, 4, new int[] {1, 3})).isEqualTo(1);
+        assertThat(appendColor.solution(4, 1, new int[] {1, 2, 3, 4})).isEqualTo(4);
+        assertThat(appendColor.solution(8, 2, new int[] {2, 6})).isEqualTo(2);
+    }
 }

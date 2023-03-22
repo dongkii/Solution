@@ -643,4 +643,13 @@ public class Level2ControllerTest {
         assertThat(visitLength.solution("ULURRDLLU")).isEqualTo(7);
         assertThat(visitLength.solution("LULLLLLLU")).isEqualTo(7);
     }
+
+    //20230223
+    @Test
+    public void 교점에별만들기() {
+        assertThat(makingStar.solution(new int[][] {{2 ,-1, 4}, {-2, -1,4},{0,-1,1},{5,-8,-12},{5,8,12}})).isEqualTo(new String[] {"....*....", ".........", ".........", "*.......*", ".........", ".........", ".........", ".........", "*.......*"});
+        assertThat(makingStar.solution(new int[][] {{0,1,-1},{1,0,-1},{1,0,1}})).isEqualTo(new String[] {"*.*"});
+        assertThat(makingStar.solution(new int[][] {{1,-1,0},{2,-1,0}})).isEqualTo(new String[] {"*"});
+        assertThat(makingStar.solution(new int[][] {{1,-1,0},{2,-1,0},{4,-1,0}})).isEqualTo(new String[] {"*"});
+    }
 }
