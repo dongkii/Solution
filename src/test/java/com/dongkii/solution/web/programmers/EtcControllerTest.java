@@ -187,4 +187,38 @@ public class EtcControllerTest {
         assertThat(HQ3.solution(new int[] {2, 1, 3}, 4)).isEqualTo(3);
         assertThat(HQ3.solution(new int[] {3, 3, 5, 5}, 7)).isEqualTo(10);
     }*/
+
+    @Test
+    public void OQ1() {
+        assertThat(OQ1.solution(new String[] {"2", "3", "+", "D", "0", "3", "R"})).isEqualTo(20);
+    }
+
+    @Test
+    public void OQ2() {
+        assertThat(OQ2.solution(new int[] {1, 3, 4, 6}, new int[] {2, 3, 4, 5})).isEqualTo(3);
+    }
+
+    @Test
+    public void OQ3() {
+        assertThat(OQ3.solution("bucketplace")).isEqualTo("cceeabklptu");
+    }
+
+    /*
+    @Test
+    public void OQ4() {
+        assertThat(OQ4.solution("3*2-5*1")).isEqualTo(new int[] {-9, -9, -9, 1, 1});
+    }
+     */
+
+    @Test
+    public void OQ5() {
+        //assertThat(OQ5.solution(new int[] {9, 10, 6, 0, 4, 6, 10})).isEqualTo(3);
+        //assertThat(OQ5.solution(new int[] {6, 10, 3, 9, 4, 10, 3, 9, 3, 10, 6})).isEqualTo(9);
+        //assertThat(OQ5.solution(new int[] {5, 3, 1, 3, 6, 4})).isEqualTo(0);
+        //assertThat(OQ5.solution(new int[] {6, 10, 3, 9, 4, 10, 3, 9, 3, 10, 9})).isEqualTo(10);
+        //assertThat(OQ5.solution(new int[] {6, 10, 3, 9, 4, 3, 3, 3, 3, 3, 3})).isEqualTo(3);
+        //assertThat(OQ5.solution(new int[] {10, 10, 3, 9, 4, 10, 3, 9, 3, 10, 9})).isEqualTo(11);
+        assertThat(OQ5.solution(new int[] {10, 10, 3, 3, 4, 3, 3, 9, 10, 10, 9})).isEqualTo(7);
+
+    }
 }
