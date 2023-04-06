@@ -361,4 +361,16 @@ public class Level1ControllerTest {
         assertThat(wallpaper.solution(new String[] {".##...##.", "#..#.#..#", "#...#...#", ".#.....#.", "..#...#..", "...#.#...", "....#...."})).isEqualTo(new int[] {0, 0, 7, 9});
         assertThat(wallpaper.solution(new String[] {"..", "#."})).isEqualTo(new int[] {1, 0, 2, 1});
     }
+
+    //20230406
+    @Test
+    public void 공원산책() throws Exception {
+        assertThat(parkWalk.solution(new String[] {"SOO","OOO","OOO"}, new String[] {"E 2","S 2","W 1"})).isEqualTo(new int[] {2, 1});
+        assertThat(parkWalk.solution(new String[] {"SOO","OXX","OOO"}, new String[] {"E 2","S 2","W 1"})).isEqualTo(new int[] {0, 1});
+        assertThat(parkWalk.solution(new String[] {"OSO","OOO","OXO","OOO"}, new String[] {"E 2","S 3","W 1"})).isEqualTo(new int[] {0, 0});
+        assertThat(parkWalk.solution(new String[] {"OOOOO","OOOOO","XOOOO", "OOOOO", "SOOOO"}, new String[] {"N 3"})).isEqualTo(new int[] {4, 0});
+        assertThat(parkWalk.solution(new String[] {"XXX","XSX","XXX"}, new String[] {"W 1"})).isEqualTo(new int[] {1, 1});
+        assertThat(parkWalk.solution(new String[] {"OOXOS","OOOOO","OOOOO", "OOOOO", "OOOOO"}, new String[] {"W 3"})).isEqualTo(new int[] {0, 4});
+        assertThat(parkWalk.solution(new String[] {"XOOOO","OOOOO","OOOOO", "OOOOO", "SOOOO"}, new String[] {"N 3"})).isEqualTo(new int[] {1, 0});
+    }
 }
