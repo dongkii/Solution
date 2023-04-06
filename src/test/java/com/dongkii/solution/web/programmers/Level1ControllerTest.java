@@ -346,4 +346,9 @@ public class Level1ControllerTest {
         assertThat(keyboard.solution(new String[] {"AA"}, new String[]{"B"})).isEqualTo(new int[] {-1});
         assertThat(keyboard.solution(new String[] {"AGZ", "BSSS"}, new String[]{"ASA", "BGZ"})).isEqualTo(new int[] {4, 6});
     }
+
+    @Test
+    public void 추억점수() {
+        assertThat(memoryScore.solution(new String[] {"may", "kein", "kain", "radi"}, new int[] {5, 10, 1, 3}, new String[][] {{"may", "kein", "kain", "radi"},{"may", "kein", "brin", "deny"}, {"kon", "kain", "may", "coni"}}));
+    }
 }
