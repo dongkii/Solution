@@ -347,8 +347,18 @@ public class Level1ControllerTest {
         assertThat(keyboard.solution(new String[] {"AGZ", "BSSS"}, new String[]{"ASA", "BGZ"})).isEqualTo(new int[] {4, 6});
     }
 
+    //20230406
     @Test
     public void 추억점수() {
         assertThat(memoryScore.solution(new String[] {"may", "kein", "kain", "radi"}, new int[] {5, 10, 1, 3}, new String[][] {{"may", "kein", "kain", "radi"},{"may", "kein", "brin", "deny"}, {"kon", "kain", "may", "coni"}}));
+    }
+
+    //20230406
+    @Test
+    public void 바탕화면정리() {
+        assertThat(wallpaper.solution(new String[] {".#...", "..#..", "...#."})).isEqualTo(new int[] {0, 1, 3, 4});
+        assertThat(wallpaper.solution(new String[] {"..........", ".....#....", "......##..", "...##.....", "....#....."})).isEqualTo(new int[] {1, 3, 5, 8});
+        assertThat(wallpaper.solution(new String[] {".##...##.", "#..#.#..#", "#...#...#", ".#.....#.", "..#...#..", "...#.#...", "....#...."})).isEqualTo(new int[] {0, 0, 7, 9});
+        assertThat(wallpaper.solution(new String[] {"..", "#."})).isEqualTo(new int[] {1, 0, 2, 1});
     }
 }
