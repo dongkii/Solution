@@ -1,5 +1,7 @@
 package com.dongkii.solution.web.programmers.level1;
 
+import java.util.Stack;
+
 public class hamburger {
     public static int solution(int[] ingredient) {
         int answer = 0;

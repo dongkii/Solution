@@ -652,4 +652,11 @@ public class Level2ControllerTest {
         assertThat(makingStar.solution(new int[][] {{1,-1,0},{2,-1,0}})).isEqualTo(new String[] {"*"});
         assertThat(makingStar.solution(new int[][] {{1,-1,0},{2,-1,0},{4,-1,0}})).isEqualTo(new String[] {"*"});
     }
+
+    //20230407
+    @Test
+    public void 프렌즈4블록() {
+        //assertThat(friends4block.solution(4, 5, new String[] {"CCBDE", "AAADE", "AAABF", "CCBBF"})).isEqualTo(14);
+        assertThat(friends4block.solution(6, 6, new String[] {"TTTANT", "RRFACC", "RRRFCC", "TRRRAA", "TTMMMF", "TMMTTJ"})).isEqualTo(15);
+    }
 }

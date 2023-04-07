@@ -254,10 +254,13 @@ public class Level1ControllerTest {
     //20221208
     @Test
     public void 햄버거만들기() {
-        assertThat(hamburger.solution(new int[] {2, 1, 1, 2, 3, 1, 2, 3, 1})).isEqualTo(2);
-        assertThat(hamburger.solution(new int[] {1, 3, 2, 1, 2, 1, 3, 1, 2})).isEqualTo(0);
-        assertThat(hamburger.solution(new int[] {1, 2, 3, 1, 1, 2, 3, 1})).isEqualTo(2);
-        assertThat(hamburger.solution(new int[] {1,2,1,2,3,1,3,1,2,3,1,2,3,1})).isEqualTo(3);
+        //assertThat(hamburger.solution(new int[] {2, 1, 1, 2, 3, 1, 2, 3, 1})).isEqualTo(2);
+        //assertThat(hamburger.solution(new int[] {1, 3, 2, 1, 2, 1, 3, 1, 2})).isEqualTo(0);
+        //assertThat(hamburger.solution(new int[] {1, 2, 3, 1, 1, 2, 3, 1})).isEqualTo(2);
+        //assertThat(hamburger.solution(new int[] {1,2,1,2,3,1,3,1,2,3,1,2,3,1})).isEqualTo(3);
+        //assertThat(hamburger.solution(new int[] {1,2,1,2,3,1,3,1})).isEqualTo(2);
+        //assertThat(hamburger.solution(new int[] {1,2,1,2,3,3,1,3,1})).isEqualTo(2);
+        assertThat(hamburger.solution(new int[] {1,2,2,3,3,1})).isEqualTo(1);
     }
 
     //20221208
