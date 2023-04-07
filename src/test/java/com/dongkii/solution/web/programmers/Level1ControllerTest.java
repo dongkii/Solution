@@ -1,5 +1,6 @@
 package com.dongkii.solution.web.programmers;
 
+import com.dongkii.solution.web.programmers.Etc.runningRace;
 import com.dongkii.solution.web.programmers.level1.*;
 import org.junit.jupiter.api.Test;
 
@@ -372,5 +373,11 @@ public class Level1ControllerTest {
         assertThat(parkWalk.solution(new String[] {"XXX","XSX","XXX"}, new String[] {"W 1"})).isEqualTo(new int[] {1, 1});
         assertThat(parkWalk.solution(new String[] {"OOXOS","OOOOO","OOOOO", "OOOOO", "OOOOO"}, new String[] {"W 3"})).isEqualTo(new int[] {0, 4});
         assertThat(parkWalk.solution(new String[] {"XOOOO","OOOOO","OOOOO", "OOOOO", "SOOOO"}, new String[] {"N 3"})).isEqualTo(new int[] {1, 0});
+    }
+
+    //20230406
+    @Test
+    public void 달리기경주() {
+        assertThat(runningRace.solution(new String[] {"mumu", "soe", "poe", "kai", "mine"}, new String[] {"kai", "kai", "mine", "mine"})).isEqualTo(new String[] {"mumu", "kai", "mine", "soe", "poe"});
     }
 }
