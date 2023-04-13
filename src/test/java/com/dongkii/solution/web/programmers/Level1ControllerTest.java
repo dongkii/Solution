@@ -376,6 +376,8 @@ public class Level1ControllerTest {
         assertThat(parkWalk.solution(new String[] {"XXX","XSX","XXX"}, new String[] {"W 1"})).isEqualTo(new int[] {1, 1});
         assertThat(parkWalk.solution(new String[] {"OOXOS","OOOOO","OOOOO", "OOOOO", "OOOOO"}, new String[] {"W 3"})).isEqualTo(new int[] {0, 4});
         assertThat(parkWalk.solution(new String[] {"XOOOO","OOOOO","OOOOO", "OOOOO", "SOOOO"}, new String[] {"N 3"})).isEqualTo(new int[] {1, 0});
+        assertThat(parkWalk.solution(new String[] {"OOXOS","OOOOO","OOOOO", "OOOOO"}, new String[] {"W 3"})).isEqualTo(new int[] {0, 4});
+
     }
 
     //20230406
