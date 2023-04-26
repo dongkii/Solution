@@ -221,4 +221,15 @@ public class EtcControllerTest {
         assertThat(OQ5.solution(new int[] {10, 10, 3, 3, 4, 3, 3, 9, 10, 10, 9})).isEqualTo(7);
 
     }
+
+
+    // 2023-04-19
+    @Test
+    public void LiveQ() {
+        assertThat(LiveQ.solution(new int[] {9}, 1)).isEqualTo(5);
+        assertThat(LiveQ.solution(new int[] {9}, 2)).isEqualTo(3);
+        assertThat(LiveQ.solution(new int[] {2, 4, 8, 2}, 4)).isEqualTo(2);
+        assertThat(LiveQ.solution(new int[] {2, 4, 7, 2}, 4)).isEqualTo(2);
+        assertThat(LiveQ.solution(new int[] {2, 4, 7, 2}, 2)).isEqualTo(4);
+    }
 }
