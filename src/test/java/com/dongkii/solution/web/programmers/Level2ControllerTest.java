@@ -666,4 +666,11 @@ public class Level2ControllerTest {
         assertThat(gameMap.solution(new int[][] {{1,0,1,1,1},{1,0,1,0,1},{1,0,1,1,1},{1,1,1,0,1},{0,0,0,0,1}})).isEqualTo(11);
         //assertThat(gameMap.solution(new int[][] {{1,0,1,1,1},{1,0,1,0,1},{1,0,1,1,1},{1,1,1,0,0},{0,0,0,0,1}})).isEqualTo(-1);
     }
+
+    //20230426
+    @Test
+    public void 뒤에있는큰수찾기() {
+        assertThat(findtheLargeNumber.solution(new int[] {2, 3, 3, 5})).isEqualTo(new int[] {3, 5, 5, -1});
+        assertThat(findtheLargeNumber.solution(new int[] {9, 1, 5, 3, 6, 2})).isEqualTo(new int[] {-1, 5, 6, 6, -1, -1});
+    }
 }
